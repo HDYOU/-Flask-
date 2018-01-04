@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第八章：flask进阶（Flask-Migrate） | 知了课堂Flask课件</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./第九章：flask进阶（flask-wtf）.html" />
+    
+    
+    <link rel="prev" href="./第七章：flask入门（xxx）.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="8"
+        data-chapter-title="第八章：flask进阶（Flask-Migrate）"
+        data-filepath="第八章：flask进阶（flask-migrate）.md"
+        data-basepath="."
+        data-revision="Fri Sep 15 2017 23:24:37 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="第一章：学前准备.html">
+            
+                
+                    <a href="./第一章：学前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章：学前准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="第二章：flask入门.html">
+            
+                
+                    <a href="./第二章：flask入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二章：认识web
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三章：flask入门（URL）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+            
+                
+                    <a href="./di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四章：flask入门（模版）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="第六章：flask入门（数据库）.html">
+            
+                
+                    <a href="./第六章：flask入门（数据库）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章：flask入门（视图高级）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="第六章：flask.html">
+            
+                
+                    <a href="./第六章：flask.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六章：flask入门（数据库）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="第七章：flask入门（xxx）.html">
+            
+                
+                    <a href="./第七章：flask入门（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七章：flask进阶（Flask-Script）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8" data-path="第八章：flask进阶（flask-migrate）.html">
+            
+                
+                    <a href="./第八章：flask进阶（flask-migrate）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八章：flask进阶（Flask-Migrate）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="第九章：flask进阶（flask-wtf）.html">
+            
+                
+                    <a href="./第九章：flask进阶（flask-wtf）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第九章：flask进阶（Flask-WTF）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="第十章：flask进阶（xxx）.html">
+            
+                
+                    <a href="./第十章：flask进阶（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第十章：flask进阶（上下文）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="第十一章：flask进阶（flask-security）.html">
+            
+                
+                    <a href="./第十一章：flask进阶（flask-security）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        第十一章：flask进阶（Flask-Security）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="第十二章：flask进阶（cookie和session）.html">
+            
+                
+                    <a href="./第十二章：flask进阶（cookie和session）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        第十二章：flask进阶（cookie和session）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="第十三章：celery使用教程.html">
+            
+                
+                    <a href="./第十三章：celery使用教程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        第十三章：celery使用教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 第四章：flask入门（模版）</span>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >知了课堂Flask课件</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="flaskmigrate">Flask-Migrate</h1>
+<p>&#x5728;&#x5B9E;&#x9645;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x53D1;&#x751F;&#x6570;&#x636E;&#x5E93;&#x4FEE;&#x6539;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x624B;&#x52A8;&#x7684;&#x53BB;&#x4FEE;&#x6539;&#xFF0C;&#x800C;&#x662F;&#x53BB;&#x4FEE;&#x6539;<code>ORM</code>&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;&#x6A21;&#x578B;&#x6620;&#x5C04;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x80FD;&#x4E13;&#x95E8;&#x505A;&#x8FD9;&#x79CD;&#x4E8B;&#x60C5;&#xFF0C;&#x5C31;&#x663E;&#x5F97;&#x975E;&#x5E38;&#x6709;&#x7528;&#x4E86;&#xFF0C;&#x800C;<code>flask-migrate</code>&#x5C31;&#x662F;&#x505A;&#x8FD9;&#x4E2A;&#x4E8B;&#x60C5;&#x7684;&#x3002;<code>flask-migrate</code>&#x662F;&#x57FA;&#x4E8E;<code>Alembic</code>&#x8FDB;&#x884C;&#x7684;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;&#xFF0C;&#x5E76;&#x96C6;&#x6210;&#x5230;<code>Flask</code>&#x4E2D;&#xFF0C;&#x800C;&#x6240;&#x6709;&#x7684;&#x8FC1;&#x79FB;&#x64CD;&#x4F5C;&#x5176;&#x5B9E;&#x90FD;&#x662F;<code>Alembic</code>&#x505A;&#x7684;&#xFF0C;&#x4ED6;&#x80FD;&#x8DDF;&#x8E2A;&#x6A21;&#x578B;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x5E76;&#x5C06;&#x53D8;&#x5316;&#x6620;&#x5C04;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;</p>
+<p>&#x4F7F;&#x7528;<code>Flask-Migrate</code>&#x9700;&#x8981;&#x5B89;&#x88C5;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>```python
+</code></pre><p>pip install flask-migrate</p>
+<pre><code>```
+</code></pre><p>&#x8981;&#x8BA9;<code>Flask-Migrate</code>&#x80FD;&#x591F;&#x7BA1;&#x7406;<code>app</code>&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>Migrate(app,db)</code>&#x6765;&#x7ED1;&#x5B9A;<code>app</code>&#x548C;&#x6570;&#x636E;&#x5E93;&#x3002;&#x5047;&#x5982;&#x73B0;&#x5728;&#x6709;&#x4EE5;&#x4E0B;<code>app</code>&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>```python
+</code></pre><p>from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from constants import DB_URI
+from flask_migrate import Migrate</p>
+<p>app = Flask(<strong>name</strong>)
+app.config[&apos;SQLALCHEMY_DATABASE_URI&apos;] = DB_URI
+app.config[&apos;SQLALCHEMY_TRACK_MODIFICATIONS&apos;] = True
+db = SQLAlchemy(app)</p>
+<h1 id="&#x7ED1;&#x5B9A;app&#x548C;&#x6570;&#x636E;&#x5E93;">&#x7ED1;&#x5B9A;app&#x548C;&#x6570;&#x636E;&#x5E93;</h1>
+<p>migrate = Migrate(app,db)</p>
+<p>class User(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    username = db.Column(db.String(20))</p>
+<pre><code>addresses = db.relationship(&apos;Address&apos;,backref=&apos;user&apos;)
+</code></pre><p>class Address(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    email_address = db.Column(db.String(50))
+    user_id = db.Column(db.Integer,db.ForeignKey(&apos;user.id&apos;))</p>
+<p>db.create_all()</p>
+<p>@app.route(&apos;/&apos;)
+def hello_world():
+    return &apos;Hello World!&apos;</p>
+<p>if <strong>name</strong> == &apos;<strong>main</strong>&apos;:
+    app.run()</p>
+<pre><code>```
+</code></pre><p>&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6620;&#x5C04;<code>ORM</code>&#x4E86;&#x3002;&#x8981;&#x64CD;&#x4F5C;&#x5F53;&#x524D;&#x7684;<code>flask app</code>&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x5C06;&#x5F53;&#x524D;&#x7684;<code>app</code>&#x5BFC;&#x5165;&#x5230;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#xFF1A;</p>
+<pre><code>```shell
+</code></pre><h1 id="windows">windows</h1>
+<p>$env:FLASK_APP=&apos;your_app.py&apos;</p>
+<h1 id="linuxunix">linux/unix</h1>
+<p>export FLASK_APP=&apos;your_app.py&apos;</p>
+<pre><code>```
+</code></pre><p>&#x5C06;&#x5F53;&#x524D;&#x7684;<code>app</code>&#x5BFC;&#x5165;&#x5230;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#x540E;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x5939;&#xFF1A;</p>
+<pre><code>```shell
+</code></pre><p>flask db init</p>
+<pre><code>```
+</code></pre><p>&#x7136;&#x540E;&#x518D;&#x628A;&#x5F53;&#x524D;&#x7684;&#x6A21;&#x578B;&#x6DFB;&#x52A0;&#x5230;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre><code>```shell
+</code></pre><p>flask db migrate</p>
+<pre><code>```
+</code></pre><p>&#x6700;&#x540E;&#x518D;&#x628A;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#xFF0C;&#x771F;&#x6B63;&#x7684;&#x6620;&#x5C04;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF1A;</p>
+<pre><code>```shell
+</code></pre><p>flask db upgrade</p>
+<pre><code>```
+</code></pre><p>&#x4EE5;&#x4E0A;&#x662F;&#x901A;&#x8FC7;&#x52A0;&#x8F7D;&#x5F53;&#x524D;&#x7684;<code>app</code>&#x5230;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x6709;&#x70B9;&#x9EBB;&#x70E6;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;<code>flask-script</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;&#x73B0;&#x5728;&#x91CD;&#x6784;&#x4E4B;&#x524D;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EE5;&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;
+<img src="assets/migrate .png" alt="flaskmigrate&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;">
+&#x4EE5;&#x4E0B;&#x5BF9;&#x5404;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF1A;</p>
+<p><strong>constants.py&#x6587;&#x4EF6;&#xFF1A;</strong>&#x5E38;&#x91CF;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># constants.py</span>
+HOSTNAME = <span class="hljs-string">&apos;127.0.0.1&apos;</span>
+PORT = <span class="hljs-string">&apos;3306&apos;</span>
+DATABASE = <span class="hljs-string">&apos;xt_flask_migrate&apos;</span>
+USERNAME = <span class="hljs-string">&apos;root&apos;</span>
+PASSWORD = <span class="hljs-string">&apos;root&apos;</span>
+DB_URI = <span class="hljs-string">&apos;mysql+mysqldb://{}:{}@{}:{}/{}&apos;</span>.format(USERNAME,PASSWORD,HOSTNAME,PORT,DATABASE)
+</code></pre>
+<p><strong>ext.py&#x6587;&#x4EF6;&#xFF1A;</strong>&#x628A;<code>db</code>&#x53D8;&#x91CF;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x653E;&#x5728;&#x4E3B;<code>app</code>&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x5927;&#x578B;&#x9879;&#x76EE;&#x4E2D;&#x5982;&#x679C;<code>db</code>&#x88AB;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x5F15;&#x7528;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x9020;&#x6210;<code>from your_app import db</code>&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#x5F80;&#x5F80;&#x4E5F;&#x5728;<code>your_app.py</code>&#x4E2D;&#x4E5F;&#x4F1A;&#x5F15;&#x5165;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#xFF0C;&#x8FD9;&#x5C31;&#x9020;&#x6210;&#x4E86;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#x3002;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x628A;&#x5B83;&#x653E;&#x5728;&#x4E0D;&#x4F9D;&#x8D56;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x7684;&#x72EC;&#x7ACB;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># ext.py</span>
+<span class="hljs-keyword">from</span> flask_sqlalchemy <span class="hljs-keyword">import</span> SQLAlchemy
+db = SQLAlchemy()
+</code></pre>
+<p><strong>models.py&#x6587;&#x4EF6;&#xFF1A;</strong>&#x6A21;&#x578B;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6240;&#x6709;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x6CE8;&#x610F;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>flask-script</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6A21;&#x578B;&#x548C;&#x8868;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>db.create_all()</code>&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># models.py</span>
+<span class="hljs-keyword">from</span> ext <span class="hljs-keyword">import</span> db
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span><span class="hljs-params">(db.Model)</span>:</span> 
+    id = db.Column(db.Integer,primary_key=<span class="hljs-keyword">True</span>) 
+    username = db.Column(db.String(<span class="hljs-number">50</span>)) 
+    addresses = db.relationship(<span class="hljs-string">&apos;Address&apos;</span>,backref=<span class="hljs-string">&apos;user&apos;</span>) 
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,username)</span>:</span> 
+        self.username = username
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Address</span><span class="hljs-params">(db.Model)</span>:</span> 
+    id = db.Column(db.Integer,primary_key=<span class="hljs-keyword">True</span>) 
+    email_address = db.Column(db.String(<span class="hljs-number">50</span>)) 
+    user_id = db.Column(db.Integer,db.ForeignKey(<span class="hljs-string">&apos;user.id&apos;</span>)) 
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,email_address)</span>:</span> 
+        self.email_address = email_address
+</code></pre>
+<p><strong>manage.py&#x6587;&#x4EF6;&#xFF1A;</strong>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6620;&#x5C04;&#x6570;&#x636E;&#x5E93;&#x7684;&#x547D;&#x4EE4;&#xFF0C;<code>MigrateCommand</code>&#x662F;<code>flask-migrate</code>&#x96C6;&#x6210;&#x7684;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x56E0;&#x6B64;&#x60F3;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x811A;&#x672C;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x91C7;&#x7528;<code>manager.add_command(&apos;db&apos;,MigrateCommand)</code>&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x540E;&#x8FD0;&#x884C;<code>python manage.py db xxx</code>&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6267;&#x884C;<code>MigrateCommand</code>&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># manage.py</span>
+<span class="hljs-keyword">from</span> flask_migrate <span class="hljs-keyword">import</span> Migrate,MigrateCommand
+<span class="hljs-keyword">from</span> ext <span class="hljs-keyword">import</span> db
+<span class="hljs-keyword">from</span> flask_script <span class="hljs-keyword">import</span> Manager
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+<span class="hljs-keyword">from</span> constants <span class="hljs-keyword">import</span> DB_URI
+<span class="hljs-keyword">import</span> models
+app = Flask(__name__)
+app.config[<span class="hljs-string">&apos;SQLALCHEMY_DATABASE_URI&apos;</span>] = DB_URI
+app.config[<span class="hljs-string">&apos;SQLALCHEMY_TRACK_MODIFICATIONS&apos;</span>] = <span class="hljs-keyword">True</span>
+db.init_app(app)
+migrate = Migrate(app,db)
+manager = Manager(app)
+manager.add_command(<span class="hljs-string">&apos;db&apos;</span>,MigrateCommand)
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>: 
+    manager.run()
+</code></pre>
+<p><strong>flaskmigrate.py&#x6587;&#x4EF6;&#xFF1A;</strong>&#x8FD9;&#x4E2A;&#x662F;&#x4E3B;<code>app</code>&#x6587;&#x4EF6;&#xFF0C;&#x8FD0;&#x884C;&#x6587;&#x4EF6;&#x3002;&#x5E76;&#x4E14;&#x56E0;&#x4E3A;<code>db</code>&#x88AB;&#x653E;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;<code>db.init_app(app)</code>&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x7ED1;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># flaskmigrate.py</span>
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+<span class="hljs-keyword">from</span> ext <span class="hljs-keyword">import</span> db
+
+app = Flask(__name__)
+db.init_app(app)
+
+<span class="hljs-decorator">@app.route(&apos;/&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Hello World!&apos;</span>
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    app.run()
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x6765;&#x521D;&#x59CB;&#x5316;&#x8FC1;&#x79FB;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-shell">python manage.py db init
+</code></pre>
+<p>&#x7136;&#x540E;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x6765;&#x5C06;&#x6A21;&#x578B;&#x7684;&#x6620;&#x5C04;&#x6DFB;&#x52A0;&#x5230;&#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-shell">python manage.py db migrate
+</code></pre>
+<p>&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x5C06;&#x6620;&#x5C04;&#x6587;&#x4EF6;&#x771F;&#x6B63;&#x7684;&#x6620;&#x5C04;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-shell">python manage.py db upgrade
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./第七章：flask入门（xxx）.html" class="navigation navigation-prev " aria-label="Previous page: 第七章：flask进阶（Flask-Script）"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./第九章：flask进阶（flask-wtf）.html" class="navigation navigation-next " aria-label="Next page: 第九章：flask进阶（Flask-WTF）"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

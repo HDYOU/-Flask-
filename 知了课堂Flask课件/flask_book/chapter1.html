@@ -1,0 +1,661 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第三章：flask入门（URL） | 知了课堂Flask课件</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html" />
+    
+    
+    <link rel="prev" href="./第二章：flask入门.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3"
+        data-chapter-title="第三章：flask入门（URL）"
+        data-filepath="chapter1.md"
+        data-basepath="."
+        data-revision="Fri Sep 15 2017 23:24:37 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="第一章：学前准备.html">
+            
+                
+                    <a href="./第一章：学前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章：学前准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="第二章：flask入门.html">
+            
+                
+                    <a href="./第二章：flask入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二章：认识web
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三章：flask入门（URL）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+            
+                
+                    <a href="./di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四章：flask入门（模版）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="第六章：flask入门（数据库）.html">
+            
+                
+                    <a href="./第六章：flask入门（数据库）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章：flask入门（视图高级）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="第六章：flask.html">
+            
+                
+                    <a href="./第六章：flask.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六章：flask入门（数据库）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="第七章：flask入门（xxx）.html">
+            
+                
+                    <a href="./第七章：flask入门（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七章：flask进阶（Flask-Script）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="第八章：flask进阶（flask-migrate）.html">
+            
+                
+                    <a href="./第八章：flask进阶（flask-migrate）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八章：flask进阶（Flask-Migrate）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="第九章：flask进阶（flask-wtf）.html">
+            
+                
+                    <a href="./第九章：flask进阶（flask-wtf）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第九章：flask进阶（Flask-WTF）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="第十章：flask进阶（xxx）.html">
+            
+                
+                    <a href="./第十章：flask进阶（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第十章：flask进阶（上下文）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="第十一章：flask进阶（flask-security）.html">
+            
+                
+                    <a href="./第十一章：flask进阶（flask-security）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        第十一章：flask进阶（Flask-Security）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="第十二章：flask进阶（cookie和session）.html">
+            
+                
+                    <a href="./第十二章：flask进阶（cookie和session）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        第十二章：flask进阶（cookie和session）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="第十三章：celery使用教程.html">
+            
+                
+                    <a href="./第十三章：celery使用教程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        第十三章：celery使用教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 第四章：flask入门（模版）</span>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >知了课堂Flask课件</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="flask&#x5165;&#x95E8;&#xFF08;url&#xFF09;">flask&#x5165;&#x95E8;&#xFF08;URL&#xFF09;</h1>
+<h3 id="flask&#x7B80;&#x4ECB;&#xFF1A;">flask&#x7B80;&#x4ECB;&#xFF1A;</h3>
+<p><code>flask</code>&#x662F;&#x4E00;&#x6B3E;&#x975E;&#x5E38;&#x6D41;&#x884C;&#x7684;<code>Python Web</code>&#x6846;&#x67B6;&#xFF0C;&#x51FA;&#x751F;&#x4E8E;2010&#x5E74;&#xFF0C;&#x4F5C;&#x8005;&#x662F;<code>Armin Ronacher</code>,&#x672C;&#x6765;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x53EA;&#x662F;&#x4F5C;&#x8005;&#x5728;&#x611A;&#x4EBA;&#x8282;&#x7684;&#x4E00;&#x4E2A;&#x73A9;&#x7B11;&#xFF0C;&#x540E;&#x6765;&#x7531;&#x4E8E;&#x975E;&#x5E38;&#x53D7;&#x6B22;&#x8FCE;&#xFF0C;&#x8FDB;&#x800C;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x6B63;&#x5F0F;&#x7684;&#x9879;&#x76EE;&#x3002;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x662F;<code>0.11.1</code>&#x3002;</p>
+<p><code>flask</code>&#x81EA;2010&#x5E74;&#x53D1;&#x5E03;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x4EE5;&#x6765;&#xFF0C;&#x5927;&#x53D7;&#x6B22;&#x8FCE;&#xFF0C;&#x6DF1;&#x5F97;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x559C;&#x7231;&#xFF0C;&#x5E76;&#x4E14;&#x5728;<a href="http://flask.pocoo.org/community/poweredby/" target="_blank">&#x591A;&#x4E2A;&#x516C;&#x53F8;</a>&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x5E94;&#x7528;&#xFF0C;flask&#x80FD;&#x5982;&#x6B64;&#x6D41;&#x884C;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x5FAE;&#x6846;&#x67B6;&#x3001;&#x7B80;&#x6D01;&#x3001;&#x53EA;&#x505A;&#x4ED6;&#x9700;&#x8981;&#x505A;&#x7684;&#xFF0C;&#x7ED9;&#x5F00;&#x53D1;&#x5C55;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x6269;&#x5C55;&#x6027;&#x3002;</li>
+<li>Flask&#x548C;&#x76F8;&#x5173;&#x7684;&#x4F9D;&#x8D56;&#xFF08;Jinja2&#x3001;Werkzeug&#xFF09;&#x8BBE;&#x8BA1;&#x5F97;&#x975E;&#x5E38;&#x4F18;&#x79C0;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x723D;&#x3002;</li>
+<li>&#x5F00;&#x53D1;&#x6548;&#x7387;&#x975E;&#x5E38;&#x9AD8;&#xFF0C;&#x6BD4;&#x5982;&#x4F7F;&#x7528;<code>SQLAlchemy</code>&#x7684;<code>ORM</code>&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x5F00;&#x53D1;&#x8005;&#x5927;&#x91CF;&#x4E66;&#x5199;<code>sql</code>&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x793E;&#x4F1A;&#x6D3B;&#x8DC3;&#x5EA6;&#x975E;&#x5E38;&#x9AD8;&#x3002;</li>
+</ul>
+<p><code>Flask</code>&#x7684;&#x7075;&#x6D3B;&#x5EA6;&#x975E;&#x5E38;&#x4E4B;&#x9AD8;&#xFF0C;&#x4ED6;&#x4E0D;&#x4F1A;&#x5E2E;&#x4F60;&#x505A;&#x592A;&#x591A;&#x7684;&#x51B3;&#x7B56;&#xFF0C;&#x5373;&#x4F7F;&#x505A;&#x5DF2;&#x7ECF;&#x5E2E;&#x4F60;&#x505A;&#x51FA;&#x9009;&#x62E9;&#xFF0C;&#x4F60;&#x4E5F;&#x80FD;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x7684;&#x66F4;&#x6362;&#x6210;&#x4F60;&#x9700;&#x8981;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;<code>Flask</code>&#x5F00;&#x53D1;&#x6570;&#x636E;&#x5E93;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x4F7F;&#x7528;<code>SQLAlchemy</code>&#x8FD8;&#x662F;<code>MongoEngine</code>&#x6216;&#x8005;&#x662F;&#x4E0D;&#x7528;<code>ORM</code>&#x800C;&#x76F4;&#x63A5;&#x57FA;&#x4E8E;<code>MySQL-Python</code>&#x8FD9;&#x6837;&#x7684;&#x5E95;&#x5C42;&#x9A71;&#x52A8;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x9009;&#x62E9;&#x6743;&#x5B8C;&#x5168;&#x638C;&#x63E1;&#x5728;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x624B;&#x4E2D;&#x3002;&#x533A;&#x522B;&#x4E8E;<code>Django</code>&#xFF0C;<code>Django</code>&#x5185;&#x7F6E;&#x4E86;&#x975E;&#x5E38;&#x5B8C;&#x5584;&#x548C;&#x4E30;&#x5BCC;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x66FF;&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#xFF0C;&#x8981;&#x4E48;&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x8981;&#x4E48;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;</li>
+<li>&#x628A;&#x9ED8;&#x8BA4;&#x7684;<code>Jinija2</code>&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x66FF;&#x6362;&#x6210;<code>Mako</code>&#x5F15;&#x64CE;&#x6216;&#x8005;&#x662F;&#x5176;&#x4ED6;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x7684;&#x3002;</li>
+</ul>
+<h3 id="&#x7B2C;&#x4E00;&#x4E2A;flask&#x7A0B;&#x5E8F;&#xFF1A;">&#x7B2C;&#x4E00;&#x4E2A;flask&#x7A0B;&#x5E8F;&#xFF1A;</h3>
+<p>&#x7528;<code>pycharm</code>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;<code>flask</code>&#x9879;&#x76EE;&#xFF0C;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#x7684;&#x622A;&#x56FE;&#x5982;&#x4E0B;&#xFF1A;
+<img src="assets/&#x65B0;&#x5EFA;&#x9879;&#x76EE;.png" alt="">
+&#x70B9;&#x51FB;<code>create</code>&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#xFF0C;&#x7136;&#x540E;&#x5728;<code>helloworld.py</code>&#x6587;&#x4EF6;&#x4E2D;&#x4E66;&#x5199;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python">    <span class="hljs-comment">#coding: utf8    </span>
+
+    <span class="hljs-comment"># &#x4ECE;flask&#x6846;&#x67B6;&#x4E2D;&#x5BFC;&#x5165;Flask&#x7C7B;</span>
+    <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask
+
+    <span class="hljs-comment"># &#x4F20;&#x5165;__name__&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;Flask&#x5B9E;&#x4F8B;</span>
+    app = Flask(__name__)
+
+    <span class="hljs-comment"># app.route&#x88C5;&#x9970;&#x5668;&#x6620;&#x5C04;URL&#x548C;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x5C06;&#x6839;URL&#x6620;&#x5C04;&#x5230;&#x4E86;hello_world&#x51FD;&#x6570;&#x4E0A;</span>
+<span class="hljs-decorator">    @app.route(&apos;/&apos;)</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;Hello World!&apos;</span>
+
+    <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+        <span class="hljs-comment"># &#x8FD0;&#x884C;&#x672C;&#x9879;&#x76EE;&#xFF0C;host=0.0.0.0&#x53EF;&#x4EE5;&#x8BA9;&#x5176;&#x4ED6;&#x7535;&#x8111;&#x4E5F;&#x80FD;&#x8BBF;&#x95EE;&#x5230;&#x8BE5;&#x7F51;&#x7AD9;&#xFF0C;port&#x6307;&#x5B9A;&#x8BBF;&#x95EE;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x9ED8;&#x8BA4;&#x7684;host&#x662F;127.0.0.1&#xFF0C;port&#x4E3A;5000</span>
+        app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>,port=<span class="hljs-number">9000</span>)
+</code></pre>
+<p>&#x7136;&#x540E;&#x70B9;&#x51FB;&#x8FD0;&#x884C;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;<code>http://127.0.0.1:9000</code>&#x5C31;&#x80FD;&#x770B;&#x5230;<code>hello world</code>&#x4E86;&#x3002;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x70B9;&#x7684;&#x662F;&#xFF0C;<code>app.run</code>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53EA;&#x9002;&#x5408;&#x4E8E;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>Gunicorn</code>&#x6216;&#x8005;<code>uWSGI</code>&#x6765;&#x542F;&#x52A8;&#x3002;&#x5982;&#x679C;&#x662F;&#x5728;&#x7EC8;&#x7AEF;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;<code>ctrl+c</code>&#x6765;&#x8BA9;&#x670D;&#x52A1;&#x505C;&#x6B62;&#x3002;</p>
+<h3 id="&#x8BBE;&#x7F6E;&#x4E3A;debug&#x6A21;&#x5F0F;&#xFF1A;">&#x8BBE;&#x7F6E;&#x4E3A;DEBUG&#x6A21;&#x5F0F;&#xFF1A;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<code>flask</code>&#x4E0D;&#x4F1A;&#x5F00;&#x542F;<code>DEBUG</code>&#x6A21;&#x5F0F;&#xFF0C;&#x5F00;&#x542F;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x540E;&#xFF0C;flask&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x4FDD;&#x5B58;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x7684;&#x91CD;&#x65B0;&#x8F7D;&#x5165;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x4EE3;&#x7801;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x4F1A;&#x5728;&#x7EC8;&#x7AEF;&#x8FDB;&#x884C;&#x63D0;&#x793A;&#x3002;</p>
+<p>&#x5F00;&#x542F;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li><p>&#x76F4;&#x63A5;&#x5728;&#x5E94;&#x7528;&#x5BF9;&#x8C61;&#x4E0A;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-python">app.debug = <span class="hljs-keyword">True</span>
+app.run()
+</code></pre>
+</li>
+<li><p>&#x5728;&#x6267;&#x884C;<code>run</code>&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x8FDB;&#x53BB;&#xFF1A;</p>
+<pre><code class="lang-python">app.run(debug=<span class="hljs-keyword">True</span>)
+</code></pre>
+</li>
+<li><p>&#x5728;<code>config</code>&#x5C5E;&#x6027;&#x4E2D;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-python">app.config.update(DEBUG=<span class="hljs-keyword">True</span>)
+</code></pre>
+<p>&#x5982;&#x679C;&#x4E00;&#x5207;&#x6B63;&#x5E38;&#xFF0C;&#x4F1A;&#x5728;&#x7EC8;&#x7AEF;&#x6253;&#x5370;&#x4EE5;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-shell">* Restarting with stat
+* Debugger is active!
+* Debugger pin code: 294-745-044
+* Running on http://0.0.0.0:9000/ (Press CTRL+C to quit)
+</code></pre>
+</li>
+</ol>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E0B;&#x5F00;&#x542F;<code>DEBUG</code>&#x6A21;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x4F1A;&#x5E26;&#x6765;&#x975E;&#x5E38;&#x5927;&#x7684;&#x5B89;&#x5168;&#x9690;&#x60A3;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x5F00;&#x542F;&#x4E86;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x540E;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x6709;&#x5F02;&#x5E38;&#x800C;&#x8FDB;&#x5165;&#x9519;&#x8BEF;&#x5806;&#x6808;&#x6A21;&#x5F0F;&#xFF0C;&#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x70B9;&#x51FB;&#x67D0;&#x4E2A;&#x5806;&#x6808;&#x60F3;&#x67E5;&#x770B;&#x53D8;&#x91CF;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9875;&#x9762;&#x4F1A;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x8BA9;&#x4F60;&#x8F93;&#x5165;<code>PIN</code>&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;<code>PIN</code>&#x503C;&#x5728;&#x4F60;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#xFF0C;&#x6BD4;&#x5982;&#x5728;&#x521A;&#x521A;&#x542F;&#x52A8;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x7684;<code>PIN</code>&#x503C;&#x4E3A;294-745-044&#xFF0C;&#x4F60;&#x8F93;&#x5165;&#x8FD9;&#x4E2A;&#x503C;&#x540E;&#xFF0C;<code>Werkzeug</code>&#x4F1A;&#x628A;&#x8FD9;&#x4E2A;<code>PIN</code>&#x503C;&#x4F5C;&#x4E3A;<code>cookie</code>&#x7684;&#x4E00;&#x90E8;&#x5206;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x5728;8&#x5C0F;&#x65F6;&#x5019;&#x8FC7;&#x671F;&#xFF0C;8&#x5C0F;&#x65F6;&#x4EE5;&#x5185;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8F93;&#x5165;PIN&#x503C;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x52A0;&#x7684;&#x5B89;&#x5168;&#xFF0C;&#x8BA9;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x4E0B;&#x7684;&#x653B;&#x51FB;&#x8005;&#x66F4;&#x96BE;&#x653B;&#x51FB;&#x5230;&#x672C;&#x7AD9;&#x3002;</p>
+<h3 id="&#x9879;&#x76EE;&#x914D;&#x7F6E;&#xFF1A;">&#x9879;&#x76EE;&#x914D;&#x7F6E;&#xFF1A;</h3>
+<p><code>Flask</code>&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;<code>app.config</code>&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x8981;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5904;&#x4E8E;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>app.config[&apos;DEBUG] = True</code>&#x6765;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;<code>Flask</code>&#x9879;&#x76EE;&#x5C06;&#x4EE5;<code>DEBUG</code>&#x6A21;&#x5F0F;&#x8FD0;&#x884C;&#x3002;&#x5728;<code>Flask</code>&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6709;&#x56DB;&#x79CD;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#xFF1A;</p>
+<ol>
+<li><p>&#x76F4;&#x63A5;&#x786C;&#x7F16;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python">app = Flask(__name__)
+app.config[<span class="hljs-string">&apos;DEBUG&apos;</span>] = <span class="hljs-keyword">True</span>
+</code></pre>
+</li>
+<li><p>&#x56E0;&#x4E3A;<code>app.config</code>&#x662F;<code>flask.config.Config</code>&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;<code>Config</code>&#x7C7B;&#x662F;&#x7EE7;&#x627F;&#x81EA;<code>dict</code>&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>update</code>&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-python">app.config.update(
+   DEBUG=<span class="hljs-keyword">True</span>,
+   SECRET_KEY=<span class="hljs-string">&apos;...&apos;</span>
+)
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x7279;&#x522B;&#x591A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x6240;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x90FD;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x52A0;&#x8F7D;&#x6A21;&#x5757;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF0C;&#x5047;&#x8BBE;&#x6709;&#x4E00;&#x4E2A;<code>settings.py</code>&#x6A21;&#x5757;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x914D;&#x7F6E;&#x9879;&#x7684;&#xFF0C;&#x6B64;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>app.config.from_object()</code>&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x65B9;&#x6CD5;&#x65E2;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x6A21;&#x5757;&#x7684;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x540D;&#x79F0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6A21;&#x5757;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 1. &#x901A;&#x8FC7;&#x6A21;&#x5757;&#x5B57;&#x7B26;&#x4E32;</span>
+app.config.from_object(<span class="hljs-string">&apos;settings&apos;</span>)
+<span class="hljs-comment"># 2. &#x901A;&#x8FC7;&#x6A21;&#x5757;&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">import</span> settings
+app.config.from_object(settings)
+</code></pre>
+</li>
+<li><p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x52A0;&#x8F7D;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x5C31;&#x662F;<code>app.config.from_pyfile()</code>&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x4EE5;<code>.py</code>&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x4E5F;&#x4E0D;&#x9650;&#x4E8E;&#x53EA;&#x4F7F;&#x7528;<code>.py</code>&#x540E;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code class="lang-python">app.config.from_pyfile(<span class="hljs-string">&apos;settings.py&apos;</span>,silent=<span class="hljs-keyword">True</span>)
+<span class="hljs-comment"># silent=True&#x8868;&#x793A;&#x5982;&#x679C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E3A;False&#xFF0C;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</span>
+</code></pre>
+</li>
+</ol>
+<p><code>Flask</code>&#x9879;&#x76EE;&#x5185;&#x7F6E;&#x4E86;&#x8BB8;&#x591A;&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5185;&#x7F6E;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<a href="http://flask.pocoo.org/docs/0.10/config/#builtin-configuration-values" target="_blank">&#x8FD9;&#x91CC;&#x67E5;&#x770B;</a>&#x3002;</p>
+<h3 id="url&#x4E0E;&#x51FD;&#x6570;&#x7684;&#x6620;&#x5C04;&#xFF1A;">URL&#x4E0E;&#x51FD;&#x6570;&#x7684;&#x6620;&#x5C04;&#xFF1A;</h3>
+<p>&#x4ECE;&#x4E4B;&#x524D;&#x7684;<code>helloworld.py</code>&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#xFF0C;&#x4E00;&#x4E2A;<code>URL</code>&#x8981;&#x4E0E;&#x6267;&#x884C;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x6620;&#x5C04;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x662F;<code>@app.route</code>&#x88C5;&#x9970;&#x5668;&#x3002;<code>@app.route</code>&#x88C5;&#x9970;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;<code>URL</code>&#x7684;&#x89C4;&#x5219;&#x6765;&#x8FDB;&#x884C;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x6BD4;&#x5982;&#x73B0;&#x5728;&#x8981;&#x6620;&#x5C04;&#x4E00;&#x4E2A;&#x6587;&#x7AE0;&#x8BE6;&#x60C5;&#x7684;<code>URL</code>&#xFF0C;&#x6587;&#x7AE0;&#x8BE6;&#x60C5;&#x7684;<code>URL</code>&#x662F;<code>/article/id/</code>&#xFF0C;id&#x6709;&#x53EF;&#x80FD;&#x4E3A;1&#x3001;2&#x3001;3...,&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-decorator">   @app.route(&apos;/article/&lt;id&gt;/&apos;)</span>
+   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">article</span><span class="hljs-params">(id)</span>:</span>
+       <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;%s article detail&apos;</span> % id
+</code></pre>
+<p>&#x5176;&#x4E2D;<code>&lt;id&gt;</code>&#xFF0C;&#x5C16;&#x62EC;&#x53F7;&#x662F;&#x56FA;&#x5B9A;&#x5199;&#x6CD5;&#xFF0C;&#x8BED;&#x6CD5;&#x4E3A;<code>&lt;variable_name&gt;</code>&#xFF0C;<code>variable_name</code>&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x8981;&#x5199;&#x6210;<code>&lt;converter:variable_name&gt;</code>&#xFF0C;&#x5176;&#x4E2D;<code>converter</code>&#x5C31;&#x662F;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<ul>
+<li>string: &#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x63A5;&#x53D7;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x659C;&#x6760;&#x201C;\/&#x201D;&#x7684;&#x6587;&#x672C;&#x3002;</li>
+<li>int: &#x63A5;&#x53D7;&#x6574;&#x5F62;&#x3002;</li>
+<li>float: &#x63A5;&#x53D7;&#x6D6E;&#x70B9;&#x7C7B;&#x578B;&#x3002;</li>
+<li>path&#xFF1A; &#x548C;string&#x7684;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x63A5;&#x53D7;&#x659C;&#x6760;&#x3002;</li>
+<li>uuid&#xFF1A; &#x53EA;&#x63A5;&#x53D7;uuid&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><p>any&#xFF1A;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x79CD;&#x8DEF;&#x5F84;&#xFF0C;&#x8FD9;&#x4E2A;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8FDB;&#x884C;&#x8BF4;&#x660E;:</p>
+<pre><code class="lang-python"><span class="hljs-decorator">  @app.route(&apos;/&lt;any(article,blog):url_path&gt;/&apos;)</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">item</span><span class="hljs-params">(url_path)</span>:</span>
+      <span class="hljs-keyword">return</span> url_path
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;item&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;<code>URL</code>,&#x4E00;&#x4E2A;&#x662F;<code>/article/</code>&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;<code>/blog/</code>&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x4F20;<code>url_path</code>&#x53C2;&#x6570;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x4E2A;<code>url_path</code>&#x7684;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x968F;&#x4FBF;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x5B9A;&#x5236;&#x5B50;&#x8DEF;&#x5F84;&#x6765;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F20;&#x7EDF;&#x7684;<code>?=</code>&#x7684;&#x5F62;&#x5F0F;&#x6765;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>/article?id=xxx</code>&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>request.args.get(&apos;id&apos;)</code>&#x6765;&#x83B7;&#x53D6;<code>id</code>&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x662F;<code>post</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>request.form.get(&apos;id&apos;)</code>&#x6765;&#x8FDB;&#x884C;&#x83B7;&#x53D6;&#x3002;</p>
+<h3 id="&#x6784;&#x9020;url&#xFF08;urlfor&#xFF09;&#xFF1A;">&#x6784;&#x9020;URL&#xFF08;url_for&#xFF09;&#xFF1A;</h3>
+<p>&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;<code>URL</code>&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x5230;&#x67D0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x600E;&#x4E48;&#x53BB;&#x83B7;&#x5F97;&#x8FD9;&#x4E2A;<code>URL</code>&#x5462;&#xFF1F;<code>url_for&#x51FD;&#x6570;</code>&#x5C31;&#x53EF;&#x4EE5;&#x5E2E;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x3002;<code>url_for()</code>&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53CA;&#x4EE5;&#x4E0A;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4ED6;&#x63A5;&#x6536;<strong>&#x51FD;&#x6570;&#x540D;</strong>&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x63A5;&#x6536;&#x5BF9;&#x5E94;<strong>URL&#x89C4;&#x5219;&#x7684;&#x547D;&#x540D;&#x53C2;&#x6570;</strong>&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x51FA;&#x73B0;&#x5176;&#x4ED6;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x4F1A;&#x6DFB;&#x52A0;&#x5230;<code>URL</code>&#x7684;&#x540E;&#x9762;&#x4F5C;&#x4E3A;<strong>&#x67E5;&#x8BE2;&#x53C2;&#x6570;</strong>&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x6784;&#x5EFA;<code>URL</code>&#x7684;&#x65B9;&#x5F0F;&#x800C;&#x9009;&#x62E9;&#x76F4;&#x63A5;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x62FC;<code>URL</code>&#x7684;&#x539F;&#x56E0;&#x6709;&#x4E24;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x6765;&#x5982;&#x679C;&#x4FEE;&#x6539;&#x4E86;<code>URL</code>&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x8BE5;<code>URL</code>&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x540D;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x5230;&#x5904;&#x53BB;&#x66FF;&#x6362;<code>URL</code>&#x4E86;&#x3002;</li>
+<li><code>url_for()</code>&#x51FD;&#x6570;&#x4F1A;&#x8F6C;&#x4E49;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x548C;<code>Unocode&#x6570;&#x636E;</code>&#xFF0C;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#x3002;</li>
+</ol>
+<p>&#x4E0B;&#x9762;&#x7528;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF1A;</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,url_for
+    app = Flask(__name__)
+
+<span class="hljs-decorator">    @app.route(&apos;/article/&lt;id&gt;/&apos;)</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">article</span><span class="hljs-params">(id)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;%s article detail&apos;</span> % id
+
+    <span class="hljs-comment"># &#x8FD9;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#x4E0B;&#x4EA7;&#x751F;&#x8BF7;&#x6C42;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4E0D;&#x7528;`app.run()`&#x6765;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;</span>
+    <span class="hljs-comment"># &#x4E5F;&#x4F1A;&#x6709;`flask`&#x4E0A;&#x4E0B;&#x6587;</span>
+    <span class="hljs-keyword">with</span> app.test_request_context():
+        <span class="hljs-keyword">print</span> url_for(<span class="hljs-string">&apos;article&apos;</span>,id=<span class="hljs-string">&apos;1&apos;</span>)
+        <span class="hljs-keyword">print</span> url_for(<span class="hljs-string">&apos;article&apos;</span>,id=<span class="hljs-string">&apos;2&apos;</span>,next=<span class="hljs-string">&apos;/&apos;</span>)
+</code></pre>
+<pre><code>&#x6267;&#x884C;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;
+&gt; /article/1/
+&gt; /article/2/?next=%2F
+</code></pre><h3 id="&#x81EA;&#x5B9A;&#x4E49;url&#x8F6C;&#x6362;&#x5668;&#xFF1A;">&#x81EA;&#x5B9A;&#x4E49;URL&#x8F6C;&#x6362;&#x5668;&#xFF1A;</h3>
+<p>&#x521A;&#x521A;&#x5728;URL&#x6620;&#x5C04;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;<code>Flask</code>&#x5185;&#x7F6E;&#x4E86;&#x51E0;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x6BD4;&#x5982;&#x6709;<code>int/string</code>&#x7B49;&#x3002;&#x5982;&#x679C;<code>Flask</code>&#x5185;&#x7F6E;&#x7684;&#x8F6C;&#x6362;&#x5668;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6B64;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x8F6C;&#x6362;&#x5668;&#x3002;&#x81EA;&#x5B9A;&#x4E49;&#x8F6C;&#x6362;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;</p>
+<ol>
+<li>&#x8F6C;&#x6362;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x4E14;&#x5FC5;&#x987B;&#x7EE7;&#x627F;&#x81EA;<code>werkzeug.routing.BaseConverter</code>&#x3002;</li>
+<li>&#x5728;&#x8F6C;&#x6362;&#x5668;&#x7C7B;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;<code>to_python(self,value)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5C06;&#x4F1A;&#x4F20;&#x9012;&#x5230;<code>view</code>&#x51FD;&#x6570;&#x4E2D;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x5728;&#x8F6C;&#x6362;&#x5668;&#x7C7B;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;<code>to_url(self,values)</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5C06;&#x4F1A;&#x5728;&#x8C03;&#x7528;<code>url_for</code>&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x751F;&#x6210;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;<code>URL</code>&#x5F62;&#x5F0F;&#x3002;</li>
+</ol>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x62FF;&#x4E00;&#x4E2A;&#x5B98;&#x65B9;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#xFF0C;<code>Reddit</code>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;<code>URL</code>&#x4E2D;&#x7528;&#x4E00;&#x4E2A;&#x52A0;&#x53F7;&#xFF08;+&#xFF09;&#x9694;&#x5F00;&#x793E;&#x533A;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x65B9;&#x4FBF;&#x540C;&#x65F6;&#x67E5;&#x770B;&#x6765;&#x81EA;&#x591A;&#x4E2A;&#x793E;&#x533A;&#x7684;&#x5E16;&#x5B50;&#x3002;&#x6BD4;&#x5982;&#x8BBF;&#x95EE;&#x201C;www.reddit.com\/r\/flask+lisp\/&#x201D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x540C;&#x65F6;&#x53EF;&#x4EE5;&#x67E5;&#x770B;flask&#x548C;lisp&#x4E24;&#x4E2A;&#x793E;&#x533A;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8F6C;&#x6362;&#x5668;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#coding: utf8</span>
+<span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,url_for
+<span class="hljs-keyword">from</span> werkzeug.routing <span class="hljs-keyword">import</span> BaseConverter
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListConverter</span><span class="hljs-params">(BaseConverter)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,url_map,separator=<span class="hljs-string">&apos;+&apos;</span>)</span>:</span>
+        super(ListConverter,self).__init__(url_map)
+        self.separator = separator
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">to_python</span><span class="hljs-params">(self, value)</span>:</span>
+        <span class="hljs-keyword">return</span> value.split(self.separator)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">to_url</span><span class="hljs-params">(self, values)</span>:</span>
+        <span class="hljs-keyword">return</span> self.separator.join(BaseConverter.to_url(self,value) <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> values)  
+
+app.url_map.converters[<span class="hljs-string">&apos;list&apos;</span>] = ListConverter
+
+<span class="hljs-decorator">@app.route(&apos;/community1/&lt;list:page_names&gt;&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">community1</span><span class="hljs-params">(page_names)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;%s+%s&apos;</span> % tuple(page_names)
+
+<span class="hljs-decorator">@app.route(&apos;/community2/&lt;list(&apos;|&apos;):page_names&gt;/&apos;)</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">community2</span><span class="hljs-params">(page_names)</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;%s|%s&quot;</span> % tuple(page_names)
+</code></pre>
+<p><code>communityu1</code>&#x4F7F;&#x7528;&#x7684;&#x662F;&#x9ED8;&#x8BA4;&#x7684;<code>+</code>&#x53F7;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x4E86;<code>|</code>&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#x3002;</p>
+<h3 id="url&#x552F;&#x4E00;&#xFF1A;">URL&#x552F;&#x4E00;&#xFF1A;</h3>
+<p><code>Flask</code>&#x7684;<code>URL</code>&#x89C4;&#x5219;&#x662F;&#x57FA;&#x4E8E;<code>Werkzeug</code>&#x7684;&#x8DEF;&#x7531;&#x6A21;&#x5757;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x601D;&#x60F3;&#x662F;&#x57FA;&#x4E8E;<code>Apache</code>&#x4EE5;&#x53CA;&#x66F4;&#x65E9;&#x7684;<code>HTTP</code>&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E3B;&#x5F20;&#xFF0C;&#x5E0C;&#x671B;&#x4FDD;&#x8BC1;&#x4F18;&#x96C5;&#x4E14;&#x552F;&#x4E00;&#x7684;<code>URL</code>&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-decorator"> @app.route(&apos;/projects/&apos;)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">projects</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;project page&apos;</span>
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x7ED3;&#x5C3E;&#x4E0D;&#x5E26;&#x659C;&#x7EBF;&#x7684;<code>URL</code>&#x4F1A;&#x88AB;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x5E26;&#x659C;&#x7EBF;&#x7684;<code>URL</code>&#x4E0A;&#x53BB;&#x3002;&#x8FD9;&#x6837;&#x6709;&#x52A9;&#x4E8E;&#x907F;&#x514D;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x641C;&#x7D22;&#x540C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x4E24;&#x6B21;&#x3002;</p>
+<p>&#x518D;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-decorator"> @app.route(&apos;/about&apos;)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;about page&apos;</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x5E26;&#x659C;&#x7EBF;&#x7684;<code>URL</code>&#xFF08;\/about\/&#xFF09;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;404&#xFF08;&quot;Not Found&quot;&#xFF09;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="&#x6307;&#x5B9A;http&#x65B9;&#x6CD5;&#xFF1A;">&#x6307;&#x5B9A;HTTP&#x65B9;&#x6CD5;&#xFF1A;</h3>
+<p>&#x5728;<code>@app.route()</code>&#x4E2D;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;<code>methods</code>&#x6765;&#x6307;&#x5B9A;&#x672C;&#x65B9;&#x6CD5;&#x652F;&#x6301;&#x7684;<code>HTTP</code>&#x65B9;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x53EA;&#x54CD;&#x5E94;<code>GET</code>&#x8BF7;&#x6C42;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-decorator">@app.route(&apos;/login/&apos;,methods=[&apos;GET&apos;,&apos;POST&apos;])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">login</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;login&apos;</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x88C5;&#x9970;&#x5668;&#x5C06;&#x8BA9;<code>login</code>&#x7684;<code>URL</code>&#x65E2;&#x80FD;&#x652F;&#x6301;<code>GET</code>&#x53C8;&#x80FD;&#x652F;&#x6301;<code>POST</code>&#x3002;</p>
+<h3 id="&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x548C;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;">&#x9875;&#x9762;&#x8DF3;&#x8F6C;&#x548C;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;</h3>
+<p>&#x91CD;&#x5B9A;&#x5411;&#x5206;&#x4E3A;&#x6C38;&#x4E45;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#x548C;&#x6682;&#x65F6;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x4F53;&#x73B0;&#x7684;&#x64CD;&#x4F5C;&#x5C31;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x4ECE;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x3002;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x4E86;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x6743;&#x9650;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4F46;&#x662F;&#x8BE5;&#x7528;&#x6237;&#x5F53;&#x524D;&#x5E76;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x7ED9;&#x4ED6;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;</p>
+<ul>
+<li><p>&#x6C38;&#x4E45;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;<code>http</code>&#x7684;&#x72B6;&#x6001;&#x7801;&#x662F;<code>301</code>&#xFF0C;&#x591A;&#x7528;&#x4E8E;&#x65E7;&#x7F51;&#x5740;&#x88AB;&#x5E9F;&#x5F03;&#x4E86;&#x8981;&#x8F6C;&#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F51;&#x5740;&#x786E;&#x4FDD;&#x7528;&#x6237;&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x6700;&#x7ECF;&#x5178;&#x7684;&#x5C31;&#x662F;&#x4EAC;&#x4E1C;&#x7F51;&#x7AD9;&#xFF0C;&#x4F60;&#x8F93;&#x5165;<code>www.jingdong.com</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x88AB;&#x91CD;&#x5B9A;&#x5411;&#x5230;<code>www.jd.com</code>&#xFF0C;&#x56E0;&#x4E3A;<code>jingdong.com</code>&#x8FD9;&#x4E2A;&#x7F51;&#x5740;&#x5DF2;&#x7ECF;&#x88AB;&#x5E9F;&#x5F03;&#x4E86;&#xFF0C;&#x88AB;&#x6539;&#x6210;<code>jd.com</code>&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5E94;&#x8BE5;&#x7528;&#x6C38;&#x4E45;&#x91CD;&#x5B9A;&#x5411;&#x3002;</p>
+</li>
+<li><p>&#x6682;&#x65F6;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;<code>http</code>&#x7684;&#x72B6;&#x6001;&#x7801;&#x662F;<code>302</code>&#xFF0C;&#x8868;&#x793A;&#x9875;&#x9762;&#x7684;&#x6682;&#x65F6;&#x6027;&#x8DF3;&#x8F6C;&#x3002;&#x6BD4;&#x5982;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x6743;&#x9650;&#x7684;&#x7F51;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#xFF0C;&#x5E94;&#x8BE5;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x7528;&#x6682;&#x65F6;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5728;<code>flask</code>&#x4E2D;&#xFF0C;&#x91CD;&#x5B9A;&#x5411;&#x662F;&#x901A;&#x8FC7;<code>flask.redirect(location,code=302)</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;<code>location</code>&#x8868;&#x793A;&#x9700;&#x8981;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x7684;<code>URL</code>&#xFF0C;&#x5E94;&#x8BE5;&#x914D;&#x5408;&#x4E4B;&#x524D;&#x8BB2;&#x7684;<code>url_for()</code>&#x51FD;&#x6570;&#x6765;&#x4F7F;&#x7528;&#xFF0C;<code>code</code>&#x8868;&#x793A;&#x91C7;&#x7528;&#x54EA;&#x4E2A;&#x91CD;&#x5B9A;&#x5411;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>302</code>&#x4E5F;&#x5373;<code>&#x6682;&#x65F6;&#x6027;&#x91CD;&#x5B9A;&#x5411;</code>&#xFF0C;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6210;<code>301</code>&#x6765;&#x5B9E;&#x73B0;&#x6C38;&#x4E45;&#x6027;&#x91CD;&#x5B9A;&#x5411;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5173;&#x4E8E;&#x5728;<code>flask</code>&#x4E2D;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#x91CD;&#x5B9A;&#x5411;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,url_for,redirect
+
+ app = Flask(__name__)
+ app.debug = <span class="hljs-keyword">True</span>
+
+<span class="hljs-decorator"> @app.route(&apos;/login/&apos;,methods=[&apos;GET&apos;,&apos;POST&apos;])</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">login</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;login page&apos;</span>
+
+<span class="hljs-decorator"> @app.route(&apos;/profile/&apos;,methods=[&apos;GET&apos;,&apos;POST&apos;])</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">profile</span><span class="hljs-params">()</span>:</span>
+     name = request.args.get(<span class="hljs-string">&apos;name&apos;</span>)
+
+ <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> name:
+ <span class="hljs-comment"># &#x5982;&#x679C;&#x6CA1;&#x6709;name&#xFF0C;&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#xFF0C;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;</span>
+     <span class="hljs-keyword">return</span> redirect()
+ <span class="hljs-keyword">else</span>:
+     <span class="hljs-keyword">return</span> name
+</code></pre>
+<h3 id="&#x5173;&#x4E8E;&#x54CD;&#x5E94;&#xFF08;response&#xFF09;&#xFF1A;">&#x5173;&#x4E8E;&#x54CD;&#x5E94;&#xFF08;Response&#xFF09;&#xFF1A;</h3>
+<p>&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#xFF0C;<code>Flask</code>&#x7684;&#x8F6C;&#x6362;&#x903B;&#x8F91;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><p>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x54CD;&#x5E94;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;<code>Flask</code>&#x4F1A;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>werkzeug.wrappers.Response</code>&#x5BF9;&#x8C61;&#xFF0C;<code>Response</code>&#x5C06;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x4E3B;&#x4F53;&#xFF0C;&#x72B6;&#x6001;&#x7801;&#x4E3A;200&#xFF0C;<code>MIME</code>&#x7C7B;&#x578B;&#x4E3A;<code>text/html</code>&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x8BE5;<code>Response</code>&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF0C;&#x5143;&#x7956;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;(response,status,headers)&#xFF0C;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;status&#x503C;&#x4F1A;&#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x7684;200&#x72B6;&#x6001;&#x7801;&#xFF0C;headers&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x6216;&#x8005;&#x5B57;&#x5178;&#xFF0C;&#x4F5C;&#x4E3A;&#x989D;&#x5916;&#x7684;&#x6D88;&#x606F;&#x5934;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;<code>Flask</code>&#x4F1A;&#x5047;&#x8BBE;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;<code>WSGI</code>t&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>Response.force_type(rv,request.environ)</code>&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4F8B;&#x5B50;&#x6765;&#x8FDB;&#x884C;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>Response</code>&#x521B;&#x5EFA;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-keyword">from</span> werkzeug.wrappers <span class="hljs-keyword">import</span> Response
+
+<span class="hljs-decorator"> @app.route(&apos;/about/&apos;)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+     resp = Response(response=<span class="hljs-string">&apos;about page&apos;</span>,status=<span class="hljs-number">200</span>,content_type=<span class="hljs-string">&apos;text/html;charset=utf-8&apos;</span>)
+     <span class="hljs-keyword">return</span> resp
+</code></pre>
+<p>&#x7B2C;&#x4E8C;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>make_response</code>&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;<code>Response</code>&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x989D;&#x5916;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;&#x8BBE;&#x7F6E;cookie&#xFF0C;header&#x4FE1;&#x606F;&#x7B49;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> make_response
+
+<span class="hljs-decorator"> @app.route(&apos;/about/&apos;)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> make_response(<span class="hljs-string">&apos;about page&apos;</span>)
+</code></pre>
+<p>&#x7B2C;&#x4E09;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;&#x901A;&#x8FC7;&#x8FD4;&#x56DE;&#x5143;&#x7EC4;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-decorator"> @app.errorhandler(404)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">not_found</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;not found&apos;</span>,<span class="hljs-number">404</span>
+</code></pre>
+<p>&#x7B2C;&#x56DB;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x54CD;&#x5E94;&#x3002;&#x81EA;&#x5B9A;&#x4E49;&#x54CD;&#x5E94;&#x5FC5;&#x987B;&#x6EE1;&#x8DB3;&#x4E09;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li><p>&#x5FC5;&#x987B;&#x7EE7;&#x627F;&#x81EA;<code>Response</code>&#x7C7B;&#x3002;</p>
+</li>
+<li><p>&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x7C7B;&#x65B9;&#x6CD5;<code>force_type(cls,rv,environ=None)</code>&#x3002;</p>
+</li>
+<li><p>&#x5FC5;&#x987B;&#x6307;&#x5B9A;<code>app.response_class</code>&#x4E3A;&#x4F60;&#x81EA;&#x5B9A;&#x4E49;&#x7684;<code>Response</code></p>
+</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF0C;<code>Restful API</code>&#x90FD;&#x662F;&#x901A;&#x8FC7;<code>JSON</code>&#x7684;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;<code>&#x540E;&#x53F0;</code>&#x8DDF;&#x524D;&#x53F0;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x6240;&#x6709;&#x7684;<code>URL</code>&#x90FD;&#x662F;&#x53D1;&#x9001;<code>JSON</code>&#x6570;&#x636E;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x4F60;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53EB;&#x505A;<code>JSONResponse</code>&#x7684;&#x7C7B;&#x6765;&#x4EE3;&#x66FF;<code>Flask</code>&#x81EA;&#x5E26;&#x7684;<code>Response</code>&#x7C7B;&#xFF1A;</p>
+<pre><code class="lang-python"> <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,jsonify
+ <span class="hljs-keyword">from</span> werkzeug.wrappers <span class="hljs-keyword">import</span> Response
+
+ app = Flask(__name__)
+
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JSONResponse</span><span class="hljs-params">(Response)</span>:</span>
+     default_mimetype = <span class="hljs-string">&apos;application/json&apos;</span>
+
+<span class="hljs-decorator">     @classmethod</span>
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">force_type</span><span class="hljs-params">(cls,response,environ=None)</span>:</span>
+         <span class="hljs-keyword">if</span> isinstance(response,dict):
+             response = jsonify(response)
+         <span class="hljs-keyword">return</span> super(JSONResponse,cls).force_type(response,environ)
+
+ app.response_class = JSONResponse
+
+<span class="hljs-decorator"> @app.route(&apos;/about/&apos;)</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+     <span class="hljs-keyword">return</span> {<span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;about page&quot;</span>}
+
+ <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+     app.run(host=<span class="hljs-string">&apos;0.0.0.0&apos;</span>,port=<span class="hljs-number">8000</span>)
+</code></pre>
+<p>&#x6B64;&#x65F6;&#x5982;&#x679C;&#x4F60;&#x8BBF;&#x95EE;<code>/about/</code>&#x8FD9;&#x4E2A;<code>URL</code>,&#x90A3;&#x4E48;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x5C06;&#x4F1A;&#x663E;&#x793A;:</p>
+<pre><code>{
+ &quot;message&quot;: &quot;about page&quot;
+}
+</code></pre><p>&#x6CE8;&#x610F;&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5199;<code>app.response_class = JSONResponse</code>&#xFF0C;&#x5C06;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x7684;&#x5C06;&#x5B57;&#x5178;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x56E0;&#x4E3A;&#x5B57;&#x5178;&#x4E0D;&#x5728;<code>Flask</code>&#x7684;&#x54CD;&#x5E94;&#x7C7B;&#x578B;&#x652F;&#x6301;&#x8303;&#x56F4;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x8C03;&#x7528;<code>app.response_class</code>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;<code>force_type</code>&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;<code>app.response_class</code>&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>Response</code>&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x8C03;&#x7528;<code>Response.force_class()</code>&#x8FD9;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4ED6;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x7B97;&#x6CD5;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x6C42;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x8BBE;&#x7F6E;<code>app.response_class=JSONResponse</code>&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x5199;<code>JSONResponse</code>&#x4E2D;&#x7684;<code>force_type</code>&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E2D;&#x5C06;&#x5B57;&#x5178;&#x8F6C;&#x6362;&#x6210;<code>JSON</code>&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x540E;&#x518D;&#x8FD4;&#x56DE;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./第二章：flask入门.html" class="navigation navigation-prev " aria-label="Previous page: 第二章：认识web"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html" class="navigation navigation-next " aria-label="Next page: 第四章：flask入门（模版）"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

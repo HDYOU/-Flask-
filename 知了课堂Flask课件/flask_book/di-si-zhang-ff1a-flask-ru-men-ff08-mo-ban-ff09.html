@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>第四章：flask入门（模版） | 知了课堂Flask课件</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./第六章：flask入门（数据库）.html" />
+    
+    
+    <link rel="prev" href="./chapter1.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4"
+        data-chapter-title="第四章：flask入门（模版）"
+        data-filepath="di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.md"
+        data-basepath="."
+        data-revision="Fri Sep 15 2017 23:24:37 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="第一章：学前准备.html">
+            
+                
+                    <a href="./第一章：学前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章：学前准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="第二章：flask入门.html">
+            
+                
+                    <a href="./第二章：flask入门.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二章：认识web
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三章：flask入门（URL）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+            
+                
+                    <a href="./di-si-zhang-ff1a-flask-ru-men-ff08-mo-ban-ff09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四章：flask入门（模版）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="第六章：flask入门（数据库）.html">
+            
+                
+                    <a href="./第六章：flask入门（数据库）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章：flask入门（视图高级）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="第六章：flask.html">
+            
+                
+                    <a href="./第六章：flask.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第六章：flask入门（数据库）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="第七章：flask入门（xxx）.html">
+            
+                
+                    <a href="./第七章：flask入门（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第七章：flask进阶（Flask-Script）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="第八章：flask进阶（flask-migrate）.html">
+            
+                
+                    <a href="./第八章：flask进阶（flask-migrate）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第八章：flask进阶（Flask-Migrate）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="第九章：flask进阶（flask-wtf）.html">
+            
+                
+                    <a href="./第九章：flask进阶（flask-wtf）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第九章：flask进阶（Flask-WTF）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="第十章：flask进阶（xxx）.html">
+            
+                
+                    <a href="./第十章：flask进阶（xxx）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第十章：flask进阶（上下文）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="第十一章：flask进阶（flask-security）.html">
+            
+                
+                    <a href="./第十一章：flask进阶（flask-security）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        第十一章：flask进阶（Flask-Security）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="第十二章：flask进阶（cookie和session）.html">
+            
+                
+                    <a href="./第十二章：flask进阶（cookie和session）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        第十二章：flask进阶（cookie和session）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="第十三章：celery使用教程.html">
+            
+                
+                    <a href="./第十三章：celery使用教程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        第十三章：celery使用教程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" >
+            
+            <span><b>14.</b> 第四章：flask入门（模版）</span>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >知了课堂Flask课件</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="flask&#x5165;&#x95E8;&#xFF08;&#x6A21;&#x677F;&#xFF09;">flask&#x5165;&#x95E8;&#xFF08;&#x6A21;&#x677F;&#xFF09;</h1>
+<h3 id="&#x6A21;&#x677F;&#xFF1A;">&#x6A21;&#x677F;&#xFF1A;</h3>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x53EA;&#x662F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x6587;&#x672C;&#xFF0C;&#x800C;&#x5728;&#x5B9E;&#x9645;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x5176;&#x5B9E;&#x5F88;&#x5C11;&#x8FD9;&#x6837;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x5B9E;&#x9645;&#x7684;&#x9875;&#x9762;&#x5927;&#x591A;&#x662F;&#x5E26;&#x6709;&#x6837;&#x5F0F;&#x548C;&#x590D;&#x6742;&#x903B;&#x8F91;&#x7684;HTML&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x51FA;&#x975E;&#x5E38;&#x6F02;&#x4EAE;&#x7684;&#x9875;&#x9762;&#x3002;&#x76EE;&#x524D;&#x5E02;&#x9762;&#x4E0A;&#x6709;&#x975E;&#x5E38;&#x591A;&#x7684;&#x6A21;&#x677F;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x4E2D;&#x6700;&#x77E5;&#x540D;&#x6700;&#x597D;&#x7528;&#x7684;&#x5C31;&#x662F;<code>Jinja2</code>&#x548C;<code>Mako</code>&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x8FD9;&#x4E24;&#x4E2A;&#x6A21;&#x677F;&#x7684;&#x7279;&#x70B9;&#x548C;&#x4E0D;&#x540C;&#xFF1A;</p>
+<ol>
+<li><p>Jinja2&#xFF1A;<code>Jinja</code>&#x662F;&#x65E5;&#x672C;&#x5BFA;&#x5E99;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x5E76;&#x4E14;&#x5BFA;&#x5E99;&#x7684;&#x82F1;&#x6587;&#x662F;<code>temple</code>&#x548C;&#x6A21;&#x677F;&#x7684;&#x82F1;&#x6587;<code>template</code>&#x7684;&#x53D1;&#x97F3;&#x7C7B;&#x4F3C;&#x3002;<code>Jinja2</code>&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x4EFF;<code>Django</code>&#x6A21;&#x677F;&#x7684;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x7531;<code>Flask</code>&#x7684;&#x4F5C;&#x8005;&#x5F00;&#x53D1;&#x3002;&#x5B83;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x88AB;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#xFF0C;&#x5E76;&#x4E14;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x9009;&#x7684;&#x6C99;&#x7BB1;&#x6A21;&#x677F;&#x6765;&#x4FDD;&#x8BC1;&#x6267;&#x884C;&#x73AF;&#x5883;&#x7684;&#x5B89;&#x5168;&#xFF0C;&#x5B83;&#x6709;&#x4EE5;&#x4E0B;&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x8BA9;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x8005;&#x548C;&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x4F5C;&#x5206;&#x79BB;&#x3002;</li>
+<li>&#x51CF;&#x5C11;<code>Flask</code>&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x7684;&#x8026;&#x5408;&#x6027;&#xFF0C;&#x9875;&#x9762;&#x903B;&#x8F91;&#x653E;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x653E;&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5C06;&#x9875;&#x9762;&#x903B;&#x8F91;&#x548C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x89E3;&#x8026;&#x6709;&#x5229;&#x4E8E;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x3001;&#x7EE7;&#x627F;&#x7B49;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#xFF0C;&#x51CF;&#x5C11;&#x5F00;&#x53D1;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;</li>
+</ul>
+</li>
+<li><p>Marko&#xFF1A;<code>Marko</code>&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x77E5;&#x540D;&#x7684;&#x6A21;&#x677F;&#x3002;&#x4ED6;&#x4ECE;<code>Django</code>&#x3001;<code>Jinja2</code>&#x7B49;&#x6A21;&#x677F;&#x501F;&#x9274;&#x4E86;&#x5F88;&#x591A;&#x8BED;&#x6CD5;&#x548C;API&#xFF0C;&#x4ED6;&#x6709;&#x4EE5;&#x4E0B;&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x6027;&#x80FD;&#x548C;<code>Jinja2</code>&#x76F8;&#x8FD1;&#xFF0C;&#x5728;<a href="http://jinja.pocoo.org/docs/dev/faq/#how-fast-is-it" target="_blank">&#x8FD9;&#x91CC;</a>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x3002;</li>
+<li>&#x6709;&#x5927;&#x578B;&#x7F51;&#x7AD9;&#x5728;&#x4F7F;&#x7528;&#xFF0C;&#x6709;&#x6210;&#x529F;&#x7684;&#x6848;&#x4F8B;&#x3002;<code>Reddit</code>&#x548C;&#x8C46;&#x74E3;&#x90FD;&#x5728;&#x4F7F;&#x7528;&#x3002;</li>
+<li>&#x6709;&#x77E5;&#x540D;&#x7684;web&#x6846;&#x67B6;&#x652F;&#x6301;&#x3002;<code>Pylons</code>&#x548C;<code>Pyramid</code>&#x8FD9;&#x4E24;&#x4E2A;web&#x6846;&#x67B6;&#x5185;&#x7F6E;&#x6A21;&#x677F;&#x5C31;&#x662F;<code>Mako</code>&#x3002;</li>
+<li>&#x652F;&#x6301;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x5199;&#x51E0;&#x4E4E;&#x539F;&#x751F;&#x7684;Python&#x8BED;&#x6CD5;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5BF9;Python&#x5DE5;&#x7A0B;&#x5E08;&#x6BD4;&#x8F83;&#x53CB;&#x597D;&#xFF0C;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x9AD8;&#x3002;</li>
+<li>&#x81EA;&#x5E26;&#x5B8C;&#x6574;&#x7684;&#x7F13;&#x5B58;&#x7CFB;&#x7EDF;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x597D;&#x7684;&#x6269;&#x5C55;&#x501F;&#x53E3;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x5207;&#x6362;&#x6210;&#x5176;&#x4ED6;&#x7684;&#x7F13;&#x5B58;&#x7CFB;&#x7EDF;&#x3002;</li>
+</ul>
+</li>
+</ol>
+<h5 id="flask&#x6E32;&#x67D3;jinja&#x6A21;&#x677F;&#xFF1A;"><code>Flask</code>&#x6E32;&#x67D3;<code>Jinja</code>&#x6A21;&#x677F;&#xFF1A;</h5>
+<p>&#x8981;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#xFF0C;&#x901A;&#x8FC7;<code>render_template</code>&#x65B9;&#x6CD5;&#x5373;&#x53EF;&#xFF0C;&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF1A;</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,render_template
+    app = Flask(__name__)
+
+<span class="hljs-decorator">    @app.route(&apos;/about/&apos;)</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&apos;about.html&apos;</span>)
+</code></pre>
+<p>&#x5F53;&#x8BBF;&#x95EE;<code>/about/</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>about()</code>&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>templates</code>&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x5BFB;&#x627E;<code>about.html</code>&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x60F3;&#x66F4;&#x6539;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x5730;&#x5740;&#xFF0C;&#x5E94;&#x8BE5;&#x5728;&#x521B;&#x5EFA;<code>app</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7ED9;<code>Flask</code>&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;<code>template_folder</code>&#xFF0C;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x518D;&#x770B;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python">     <span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask,render_template
+     app = Flask(__name__,template_folder=<span class="hljs-string">r&apos;C:\templates&apos;</span>)
+
+<span class="hljs-decorator">     @app.route(&apos;/about/&apos;)</span>
+     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">about</span><span class="hljs-params">()</span>:</span>
+         <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">&apos;about.html&apos;</span>)
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x5C06;&#x4F1A;&#x5728;C&#x76D8;&#x7684;templates&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5BFB;&#x627E;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x3002;&#x8FD8;&#x6709;&#x6700;&#x540E;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x4E2D;&#x6709;&#x53C2;&#x6570;&#x9700;&#x8981;&#x4F20;&#x9012;&#xFF0C;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x4F20;&#x5462;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python">    from flask import Flask,render_template
+    app = Flask(__name__)
+
+    @app.route(&apos;/about/&apos;)
+    def about():
+        # return render_template(&apos;about.html&apos;,user=&apos;xiaotuo&apos;)
+        return render_template(&apos;about.html&apos;,**{&apos;user&apos;:&apos;xiaotuo})
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x4ECB;&#x7ECD;&#x4E86;&#x4E24;&#x79CD;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;<code>render_template</code>&#x9700;&#x8981;&#x4F20;&#x9012;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x987A;&#x5176;&#x81EA;&#x7136;&#x7684;&#x3002;&#x4F46;&#x662F;&#x5F53;&#x4F60;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#x8981;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x8FC7;&#x591A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x628A;&#x6240;&#x6709;&#x53C2;&#x6570;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#x663E;&#x7136;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x8FDB;&#x884C;&#x5305;&#x88C5;&#xFF0C;&#x5E76;&#x4E14;&#x52A0;&#x4E24;&#x4E2A;<code>*</code>&#x53F7;&#xFF0C;&#x6765;&#x8F6C;&#x6362;&#x6210;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x3002;</p>
+<h5 id="jinja2&#xFF1A;">Jinja2&#xFF1A;</h5>
+<p><code>Jinja2</code>&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x8DDF;&#x7740;<code>Flask</code>&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x88AB;&#x5B89;&#x88C5;&#x5230;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>pip install Jinja2</code>&#x6765;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<h6 id="&#x6982;&#x8981;&#xFF1A;">&#x6982;&#x8981;&#xFF1A;</h6>
+<p><code>Jinja</code>&#x6A21;&#x677F;&#x662F;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x4E2A;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF08;html\/xml\/csv...&#xFF09;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x7528;&#x6765;&#x4EA7;&#x751F;<code>html</code>&#x6587;&#x4EF6;&#xFF0C;&#x540E;&#x7F00;&#x540D;&#x4E5F;&#x4F9D;&#x7167;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5FC3;&#x60C5;&#x800C;&#x5B9A;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5C3D;&#x91CF;&#x547D;&#x540D;&#x4E3A;&#x6A21;&#x677F;&#x6B63;&#x786E;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x589E;&#x52A0;&#x53EF;&#x8BFB;&#x6027;&#x3002;&#x5148;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">1. <span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>
+2. <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+3.    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>My Webpage<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+4. <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+5. <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+6.     <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;navigation&quot;</span>&gt;</span>
+7.     {% for item in navigation %}
+8.         <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;{{ item.href }}&quot;</span>&gt;</span>{{ item.caption }}<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+9.     {% endfor %}
+10.    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+11.
+12.    {{ a_variable }}
+13.    {{ user.name }}
+14.    {{ user[&apos;name&apos;] }}
+15.
+16.    {# a comment #}
+17. <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+18.<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+<p>&#x4EE5;&#x4E0A;&#x793A;&#x4F8B;&#x6709;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>{% raw %}</p>
+<ul>
+<li>&#x7B2C;12~14&#x884C;&#x7684;<code>{{ ... }}</code>&#xFF1A;&#x7528;&#x6765;&#x88C5;&#x8F7D;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x628A;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4EE3;&#x8868;&#x7684;&#x503C;&#x66FF;&#x6362;&#x6389;&#x3002;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x95F4;&#x63A5;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x7684;<code>key</code>&#x3002;&#x5173;&#x4E8E;&#x70B9;<code>.</code>&#x53F7;&#x8BBF;&#x95EE;&#x548C;<code>[]</code>&#x4E2D;&#x62EC;&#x53F7;&#x8BBF;&#x95EE;&#xFF0C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x533A;&#x522B;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;&#x548C;&#x5B57;&#x5178;&#x7684;&#x503C;&#x3002;</li>
+<li>&#x7B2C;7~9&#x884C;&#x7684;<code>{% ... %}</code>&#xFF1A;&#x7528;&#x6765;&#x88C5;&#x8F7D;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#xFF0C;&#x4EE5;&#x4E0A;&#x88C5;&#x8F7D;&#x7684;&#x662F;<code>for</code>&#x5FAA;&#x73AF;&#xFF0C;&#x4EE5;&#x540E;&#x53EA;&#x8981;&#x662F;&#x8981;&#x7528;&#x5230;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x7684;&#xFF0C;&#x5C31;&#x7528;<code>{% ... %}</code>&#x3002;</li>
+<li>&#x7B2C;14&#x884C;&#x7684;<code>{# ... #}</code>&#xFF1A;&#x7528;&#x6765;&#x88C5;&#x8F7D;&#x4E00;&#x4E2A;&#x6CE8;&#x91CA;&#xFF0C;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5FFD;&#x89C6;&#x8FD9;&#x4E2D;&#x95F4;&#x7684;&#x503C;&#x3002;</li>
+</ul>
+<p>{% endraw %}</p>
+<h6 id="&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x89C4;&#x5219;&#xFF1A;">&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x89C4;&#x5219;&#xFF1A;</h6>
+<ol>
+<li><p>&#x6BD4;&#x5982;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#xFF1A;<code>foo.bar</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;<code>Jinja2</code>&#x4E2D;&#x662F;&#x8FD9;&#x6837;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x7684;&#xFF1A;</p>
+<ul>
+<li>&#x5148;&#x53BB;&#x67E5;&#x627E;<code>foo</code>&#x7684;<code>bar</code>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x4E5F;&#x5373;&#x901A;&#x8FC7;<code>getattr(foo,&apos;bar&apos;)</code>&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5C31;&#x53BB;&#x901A;&#x8FC7;<code>foo.__getitem__(&apos;bar&apos;)</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>undefined</code>&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#xFF1A;<code>foo[&apos;bar&apos;]</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;<code>Jinja2</code>&#x4E2D;&#x662F;&#x8FD9;&#x6837;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7;<code>foo.__getitem__(&apos;bar&apos;)</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#xFF0C;&#x5C31;&#x901A;&#x8FC7;<code>getattr(foo,&apos;bar&apos;)</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x6CA1;&#x6709;&#x627E;&#x5230;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>undefined</code>&#x3002;</li>
+</ul>
+</li>
+</ol>
+<h6 id="&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;">&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;</h6>
+<p>&#x8FC7;&#x6EE4;&#x5668;&#x662F;&#x901A;&#x8FC7;&#x7BA1;&#x9053;&#x7B26;&#x53F7;&#xFF08;<code>|</code>&#xFF09;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>{{ name|length }}</code>&#xFF0C;&#x5C06;&#x8FD4;&#x56DE;name&#x7684;&#x957F;&#x5EA6;&#x3002;&#x8FC7;&#x6EE4;&#x5668;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x628A;&#x5F53;&#x524D;&#x7684;&#x53D8;&#x91CF;&#x4F20;&#x5165;&#x5230;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x8FC7;&#x6EE4;&#x5668;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x518D;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x5C06;&#x7ED3;&#x679C;&#x6E32;&#x67D3;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x3002;<code>Jinja2</code>&#x4E2D;&#x5185;&#x7F6E;&#x4E86;&#x8BB8;&#x591A;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x5728;<a href="http://jinja.pocoo.org/docs/dev/templates/#builtin-filters" target="_blank">&#x8FD9;&#x91CC;</a>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6240;&#x6709;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x73B0;&#x5BF9;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x8FC7;&#x6EE4;&#x5668;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF1A;</p>
+<ul>
+<li><code>abs(value)</code>&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>-1|abs</code></li>
+<li><code>default(value,default_value,boolean=false)</code>&#xFF1A;&#x5982;&#x679C;&#x5F53;&#x524D;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x503C;&#xFF0C;&#x5219;&#x4F1A;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x503C;&#x6765;&#x4EE3;&#x66FF;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>name|default(&apos;xiaotuo&apos;)</code>&#x2014;&#x2014;&#x5982;&#x679C;name&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4F1A;&#x4F7F;&#x7528;<code>xiaotuo</code>&#x6765;&#x66FF;&#x4EE3;&#x3002;<code>boolean=False</code>&#x9ED8;&#x8BA4;&#x662F;&#x5728;&#x53EA;&#x6709;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E3A;<code>undefined</code>&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x4F7F;&#x7528;<code>default</code>&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x4F7F;&#x7528;<code>python</code>&#x7684;&#x5F62;&#x5F0F;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;<code>false</code>&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4F20;&#x9012;<code>boolean=true</code>&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>or</code>&#x6765;&#x66FF;&#x6362;&#x3002;</li>
+<li><code>escape(value)&#x6216;e</code>&#xFF1A;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#xFF0C;&#x4F1A;&#x5C06;<code>&lt;</code>&#x3001;<code>&gt;</code>&#x7B49;&#x7B26;&#x53F7;&#x8F6C;&#x4E49;&#x6210;HTML&#x4E2D;&#x7684;&#x7B26;&#x53F7;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>content|escape</code>&#x6216;<code>content|e</code>&#x3002;</li>
+<li><code>first(value)</code>&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>names|first</code></li>
+<li><code>format(value,*arags,**kwargs)</code>&#xFF1A;&#x683C;&#x5F0F;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6BD4;&#x5982;&#xFF1A;
+{% raw %}<pre><code class="lang-html">  {{ &quot;%s&quot; - &quot;%s&quot;|format(&apos;Hello?&apos;,&quot;Foo!&quot;) }}
+  &#x5C06;&#x8F93;&#x51FA;&#xFF1A;Helloo? - Foo!
+</code></pre>
+{% endraw %}</li>
+<li><code>last(value)</code>&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>names|last</code>&#x3002;</li>
+<li><code>length(value)</code>&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x6216;&#x8005;&#x5B57;&#x5178;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>names|length</code>&#x3002;</li>
+<li><code>join(value,d=u&apos;&apos;)</code>&#xFF1A;&#x5C06;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x7528;<code>d</code>&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x503C;&#x62FC;&#x63A5;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>safe(value)</code>&#xFF1A;&#x5982;&#x679C;&#x5F00;&#x542F;&#x4E86;&#x5168;&#x5C40;&#x8F6C;&#x4E49;&#xFF0C;&#x90A3;&#x4E48;<code>safe</code>&#x8FC7;&#x6EE4;&#x5668;&#x4F1A;&#x5C06;&#x53D8;&#x91CF;&#x5173;&#x6389;&#x8F6C;&#x4E49;&#x3002;&#x793A;&#x4F8B;&#xFF1A;<code>content_html|safe</code>&#x3002;</li>
+<li><code>int(value)</code>&#xFF1A;&#x5C06;&#x503C;&#x8F6C;&#x6362;&#x4E3A;<code>int</code>&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>float(value)</code>&#xFF1A;&#x5C06;&#x503C;&#x8F6C;&#x6362;&#x4E3A;<code>float</code>&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>lower(value)</code>&#xFF1A;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x3002;</li>
+<li><code>upper(value)</code>&#xFF1A;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x3002;</li>
+<li><code>replace(value,old,new)</code>&#xFF1A; &#x66FF;&#x6362;&#x5C06;<code>old</code>&#x66FF;&#x6362;&#x4E3A;<code>new</code>&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>truncate(value,length=255,killwords=False)</code>&#xFF1A;&#x622A;&#x53D6;<code>length</code>&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>striptags(value)</code>&#xFF1A;&#x5220;&#x9664;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6240;&#x6709;&#x7684;HTML&#x6807;&#x7B7E;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x591A;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x5C06;&#x66FF;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</li>
+<li><code>trim</code>&#xFF1A;&#x622A;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x524D;&#x9762;&#x548C;&#x540E;&#x9762;&#x7684;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#x3002;</li>
+<li><code>string(value)</code>&#xFF1A;&#x5C06;&#x53D8;&#x91CF;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>wordcount(s)</code>&#xFF1A;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x957F;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x5355;&#x8BCD;&#x7684;&#x4E2A;&#x6570;&#x3002;</li>
+</ul>
+<h6 id="&#x63A7;&#x5236;&#x8BED;&#x53E5;&#xFF1A;">&#x63A7;&#x5236;&#x8BED;&#x53E5;&#xFF1A;</h6>
+<p>&#x6240;&#x6709;&#x7684;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x90FD;&#x662F;&#x653E;&#x5728;<code>{% ... %}</code>&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;<code>{% endxxx %}</code>&#x6765;&#x8FDB;&#x884C;&#x7ED3;&#x675F;&#xFF0C;<code>Jinja</code>&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x6709;<code>if/for..in..</code>&#xFF0C;&#x73B0;&#x5BF9;&#x4ED6;&#x4EEC;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#xFF1A;</p>
+<ul>
+<li><p><code>if</code>&#xFF1A;if&#x8BED;&#x53E5;&#x548C;<code>python</code>&#x4E2D;&#x7684;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&gt;&#xFF0C;&lt;&#xFF0C;&lt;=&#xFF0C;&gt;=&#xFF0C;==&#xFF0C;!=</code>&#x6765;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>and&#xFF0C;or&#xFF0C;not&#xFF0C;()</code>&#x6765;&#x8FDB;&#x884C;&#x903B;&#x8F91;&#x5408;&#x5E76;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x4E0B;&#x770B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>{% if kenny.sick %}
+    Kenny is sick.
+{% elif kenny.dead %}
+  You killed Kenny!  You bastard!!!
+{% else %}
+  Kenny looks okay --- so far
+{% endif %}
+</code></pre></li>
+<li><p><code>for...in...</code>&#xFF1A;<code>for</code>&#x5FAA;&#x73AF;&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5305;&#x62EC;&#x6570;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#x3001;&#x5143;&#x7EC4;&#x3002;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x904D;&#x5386;&#xFF0C;&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF1A;</p>
+<ol>
+<li><p>&#x666E;&#x901A;&#x7684;&#x904D;&#x5386;&#xFF1A;
+ {% raw %}</p>
+<pre><code class="lang-html">   <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+   {% for user in users %}
+   <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>{{ user.username|e }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+   {% endfor %}
+   <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p> {% endraw %}</p>
+</li>
+<li><p>&#x904D;&#x5386;&#x5B57;&#x5178;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">   <span class="hljs-tag">&lt;<span class="hljs-title">dl</span>&gt;</span>
+   {% for key, value in my_dict.iteritems() %}
+   <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>{{ key|e }}<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>{{ value|e }}<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+   {% endfor %}
+   <span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5E8F;&#x5217;&#x4E2D;&#x6CA1;&#x6709;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FDB;&#x5165;<code>else</code>&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">   <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+   {% for user in users %}
+   <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>{{ user.username|e }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+   {% else %}
+   <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>no users found<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+   {% endfor %}
+   <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>&#x5E76;&#x4E14;<code>Jinja</code>&#x4E2D;&#x7684;<code>for</code>&#x5FAA;&#x73AF;&#x8FD8;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x904D;&#x5386;&#x72B6;&#x6001;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D8;&#x91CF;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loop.index</td>
+<td>&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x7684;&#x7D22;&#x5F15;&#xFF08;&#x4ECE;1&#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td>loop.index0</td>
+<td>&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x7684;&#x7D22;&#x5F15;&#xFF08;&#x4ECE;0&#x5F00;&#x59CB;&#xFF09;</td>
+</tr>
+<tr>
+<td>loop.first</td>
+<td>&#x662F;&#x5426;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#xFF0C;&#x8FD4;&#x56DE;True\/False</td>
+</tr>
+<tr>
+<td>loop.last</td>
+<td>&#x662F;&#x5426;&#x662F;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#xFF0C;&#x8FD4;&#x56DE;True\/False</td>
+</tr>
+<tr>
+<td>loop.length</td>
+<td>&#x5E8F;&#x5217;&#x7684;&#x957F;&#x5EA6;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>continue</code>&#x548C;<code>break</code>&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x63A7;&#x5236;&#x5FAA;&#x73AF;&#x7684;&#x6267;&#x884C;</p>
+<h6 id="&#x6D4B;&#x8BD5;&#x5668;&#xFF1A;">&#x6D4B;&#x8BD5;&#x5668;&#xFF1A;</h6>
+<p>&#x6D4B;&#x8BD5;&#x5668;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x67D0;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x666E;&#x901A;&#x7684;<code>if</code>&#x5224;&#x65AD;&#x662F;&#x6709;&#x5F88;&#x5927;&#x7684;&#x6311;&#x6218;&#x7684;&#x3002;&#x8BED;&#x6CD5;&#x662F;&#xFF1A;<code>if...is...</code>&#xFF0C;&#x5148;&#x6765;&#x7B80;&#x5355;&#x7684;&#x770B;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">{% if variable is escaped%}
+    value of variable: {{ escaped }}
+{% else %}
+    variable is not escaped
+{% endif %}
+</code></pre>
+<p>{% endraw %}</p>
+<p>&#x4EE5;&#x4E0A;&#x5224;&#x65AD;<code>variable</code>&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x8F6C;&#x4E49;&#x4E86;&#xFF0C;<code>Jinja</code>&#x4E2D;&#x5185;&#x7F6E;&#x4E86;&#x8BB8;&#x591A;&#x7684;&#x6D4B;&#x8BD5;&#x5668;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x5217;&#x8868;&#xFF1A;</p>
+<ul>
+<li><code>callable(object)</code>&#xFF1A;&#x662F;&#x5426;&#x53EF;&#x8C03;&#x7528;&#x3002;</li>
+<li><code>defined(object)</code>&#xFF1A;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x5B9A;&#x4E49;&#x4E86;&#x3002;</li>
+<li><code>escaped(object)</code>&#xFF1A;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x8F6C;&#x4E49;&#x4E86;&#x3002;</li>
+<li><code>upper(object)</code>&#xFF1A;&#x662F;&#x5426;&#x5168;&#x662F;&#x5927;&#x5199;&#x3002;</li>
+<li><code>lower(object)</code>&#xFF1A;&#x662F;&#x5426;&#x5168;&#x662F;&#x5C0F;&#x5199;&#x3002;</li>
+<li><code>string(object)</code>&#xFF1A;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+<li><code>sequence(object)</code>&#xFF1A;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x3002;</li>
+<li><code>number(object)</code>&#xFF1A;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x3002;</li>
+<li><code>odd(object)</code>&#xFF1A;&#x662F;&#x5426;&#x662F;&#x5947;&#x6570;&#x3002;</li>
+<li><code>even(object)</code>&#xFF1A;&#x662F;&#x5426;&#x662F;&#x5076;&#x6570;&#x3002;</li>
+</ul>
+<h6 id="&#x5B8F;&#xFF1A;">&#x5B8F;&#xFF1A;</h6>
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x5B8F;&#x8DDF;python&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E9B;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x653E;&#x5230;&#x5B8F;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x4E00;&#x4E9B;&#x4E0D;&#x56FA;&#x5B9A;&#x7684;&#x503C;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x4EE5;&#x4E0B;&#x5C06;&#x7528;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>    {% macro input(name, value=&apos;&apos;, type=&apos;text&apos;) %}
+        &lt;input type=&quot;{{ type }}&quot; name=&quot;{{ name }}&quot; value=&quot;{{
+        value|e }}&quot;&gt;
+    {% endmacro %}
+</code></pre><p>{% endraw %}</p>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x62BD;&#x53D6;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;input&#x6807;&#x7B7E;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E9B;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x3002;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x4EE5;&#x540E;&#x521B;&#x5EFA;<code>input</code>&#x6807;&#x7B7E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4ED6;&#x5FEB;&#x901F;&#x7684;&#x521B;&#x5EFA;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{ input(&apos;username&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{ input(&apos;password&apos;, type=&apos;password&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+<h6 id="import&#x8BED;&#x53E5;&#xFF1A;">import&#x8BED;&#x53E5;&#xFF1A;</h6>
+<p>&#x5728;&#x771F;&#x5B9E;&#x7684;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x4F1A;&#x5C06;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x5B8F;&#x5355;&#x72EC;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x518D;&#x4ECE;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x5BFC;&#x5165;&#x3002;<code>import</code>&#x8BED;&#x53E5;&#x7684;&#x7528;&#x6CD5;&#x8DDF;<code>python</code>&#x4E2D;&#x7684;<code>import</code>&#x7C7B;&#x4F3C;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;<code>import...as...</code>&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;<code>from...import...</code>&#x6216;&#x8005;<code>from...import...as...</code>&#xFF0C;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x53EB;&#x505A;<code>forms.html</code>&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x4E24;&#x4E2A;&#x5B8F;&#x5206;&#x522B;&#x4E3A;<code>input</code>&#x548C;<code>textarea</code>&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">    forms.html&#xFF1A;
+    {% macro input(name, value=&apos;&apos;, type=&apos;text&apos;) %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;{{ type }}&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;{{ value|e }}&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;{{ name }}&quot;</span>&gt;</span>
+    {% endmacro %}
+
+    {% macro textarea(name, value=&apos;&apos;, rows=10, cols=40) %}
+        <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;{{ name }}&quot;</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">&quot;{{ rows }}&quot;</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">&quot;{{ cols
+        }}&quot;</span>&gt;</span>{{ value|e }}<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    {% endmacro %}
+</code></pre>
+<p>{% endraw %}</p>
+<p>&#x770B;&#x4EE5;&#x4E0B;&#x5BFC;&#x5165;&#x5B8F;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ol>
+<li><p><code>import...as...</code>&#x5F62;&#x5F0F;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html">{% import &apos;forms.html&apos; as forms %}
+<span class="hljs-tag">&lt;<span class="hljs-title">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>{{ forms.input(&apos;username&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>{{ forms.input(&apos;password&apos;, type=&apos;password&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{ forms.textarea(&apos;comment&apos;) }}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+</li>
+<li><p><code>from...import...as.../from...import...</code>&#x5F62;&#x5F0F;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>{% from &apos;forms.html&apos; import input as input_field, textarea %}
+&lt;dl&gt;
+  &lt;dt&gt;Username&lt;/dt&gt;
+  &lt;dd&gt;{{ input_field(&apos;username&apos;) }}&lt;/dd&gt;
+  &lt;dt&gt;Password&lt;/dt&gt;
+  &lt;dd&gt;{{ input_field(&apos;password&apos;, type=&apos;password&apos;) }}&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;{{ textarea(&apos;comment&apos;) }}&lt;/p&gt;
+</code></pre><p>{% endraw %}</p>
+</li>
+</ol>
+<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5BFC;&#x5165;&#x6A21;&#x677F;&#x5E76;&#x4E0D;&#x4F1A;&#x628A;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x6DFB;&#x52A0;&#x5230;&#x88AB;&#x5BFC;&#x5165;&#x7684;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x53D8;&#x91CF;&#x7684;&#x5B8F;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x80FD;&#x7684;&#x65B9;&#x6CD5;:</p>
+<ul>
+<li>&#x663E;&#x5F0F;&#x5730;&#x4F20;&#x5165;&#x8BF7;&#x6C42;&#x6216;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x4F5C;&#x4E3A;&#x5B8F;&#x7684;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x4E0E;&#x4E0A;&#x4E0B;&#x6587;&#x4E00;&#x8D77;&#xFF08;with context&#xFF09;&#x5BFC;&#x5165;&#x5B8F;&#x3002;</li>
+</ul>
+<p>&#x4E0E;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x4E00;&#x8D77;&#xFF08;with context&#xFF09;&#x5BFC;&#x5165;&#x7684;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;:</p>
+<pre><code>{% from &apos;_helpers.html&apos; import my_macro with context %}
+</code></pre><h6 id="include&#x8BED;&#x53E5;&#xFF1A;">include&#x8BED;&#x53E5;&#xFF1A;</h6>
+<p><code>include</code>&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x628A;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x5F15;&#x5165;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x628A;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x7684;&#x4EE3;&#x7801;copy&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x7684;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>    {% include &apos;header.html&apos; %}
+        Body
+    {% include &apos;footer.html&apos; %}
+</code></pre><h6 id="&#x8D4B;&#x503C;&#xFF08;set&#xFF09;&#x8BED;&#x53E5;&#xFF1A;">&#x8D4B;&#x503C;&#xFF08;set&#xFF09;&#x8BED;&#x53E5;&#xFF1A;</h6>
+<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x5728;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x6DFB;&#x52A0;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#xFF08;set&#xFF09;&#x5C31;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x4E86;&#xFF0C;&#x5148;&#x770B;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>    {% set name=&apos;xiaotuo&apos; %}
+</code></pre><p>&#x90A3;&#x4E48;&#x4EE5;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>name</code>&#x6765;&#x4EE3;&#x66FF;<code>xiaotuo</code>&#x8FD9;&#x4E2A;&#x503C;&#x4E86;&#xFF0C;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7ED9;&#x4ED6;&#x8D4B;&#x503C;&#x4E3A;&#x5217;&#x8868;&#x548C;&#x5143;&#x7EC4;&#xFF1A;</p>
+<pre><code>    {% set navigation = [(&apos;index.html&apos;, &apos;Index&apos;), (&apos;about.html&apos;, &apos;About&apos;)] %}
+</code></pre><p>&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x521B;&#x5EFA;&#x7684;&#x53D8;&#x91CF;&#x5728;&#x5176;&#x4E4B;&#x540E;&#x90FD;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8BA9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6C61;&#x67D3;&#x5168;&#x5C40;&#x73AF;&#x5883;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>with</code>&#x8BED;&#x53E5;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5C06;<code>set</code>&#x8BED;&#x53E5;&#x653E;&#x5728;&#x5176;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x521B;&#x5EFA;&#x7684;&#x53D8;&#x91CF;&#x53EA;&#x5728;<code>with</code>&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x624D;&#x6709;&#x6548;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>{% with %}
+    {% set foo = 42 %}
+    {{ foo }}           foo is 42 here
+{% endwith %}
+</code></pre><p>{% endraw %}</p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>with</code>&#x7684;&#x540E;&#x9762;&#x76F4;&#x63A5;&#x6DFB;&#x52A0;&#x53D8;&#x91CF;&#xFF0C;&#x6BD4;&#x5982;&#x4EE5;&#x4E0A;&#x7684;&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x6210;&#x8FD9;&#x6837;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>{% with foo = 42 %}
+    {{ foo }}
+{% endwith %}
+</code></pre><p>{% endraw %}</p>
+<p>&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x4E00;&#x65E6;&#x8D85;&#x51FA;<code>with</code>&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x4F7F;&#x7528;<code>foo</code>&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E86;&#x3002;</p>
+<h6 id="&#x6A21;&#x677F;&#x7EE7;&#x627F;&#xFF1A;">&#x6A21;&#x677F;&#x7EE7;&#x627F;&#xFF1A;</h6>
+<p><code>Flask</code>&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#x53EF;&#x4EE5;&#x628A;&#x6A21;&#x677F;&#x4E2D;&#x8BB8;&#x591A;&#x91CD;&#x590D;&#x51FA;&#x73B0;&#x7684;&#x5143;&#x7D20;&#x62BD;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x653E;&#x5728;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x7236;&#x6A21;&#x677F;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;<code>block</code>&#x7ED9;&#x5B50;&#x6A21;&#x677F;&#x5F00;&#x4E00;&#x4E2A;&#x53E3;&#xFF0C;&#x5B50;&#x6A21;&#x677F;&#x6839;&#x636E;&#x9700;&#x8981;&#xFF0C;&#x518D;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;<code>block</code>&#xFF0C;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x6709;&#x4E00;&#x4E2A;<code>base.html</code>&#x8FD9;&#x4E2A;&#x7236;&#x6A21;&#x677F;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    {% block head %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>{% block title %}{% endblock %} - My Webpage<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    {% endblock %}
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;content&quot;</span>&gt;</span>{% block content %}{% endblock %}<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;footer&quot;</span>&gt;</span>
+        {% block footer %}
+        &amp;copy; Copyright 2008 by <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://domain.invalid/&quot;</span>&gt;</span>you<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>.
+        {% endblock %}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>{% endraw %}</p>
+<p>&#x4EE5;&#x4E0A;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x62BD;&#x53D6;&#x4E86;&#x6240;&#x6709;&#x6A21;&#x677F;&#x90FD;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x5143;&#x7D20;<code>html</code>&#x3001;<code>body</code>&#x7B49;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x6240;&#x6709;&#x6A21;&#x677F;&#x90FD;&#x8981;&#x7528;&#x5230;&#x7684;&#x6837;&#x5F0F;&#x6587;&#x4EF6;<code>style.css</code>&#x4E5F;&#x8FDB;&#x884C;&#x4E86;&#x62BD;&#x53D6;&#xFF0C;&#x540C;&#x65F6;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x5B50;&#x6A21;&#x677F;&#x9700;&#x8981;&#x91CD;&#x5199;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6BD4;&#x5982;<code>title</code>&#x3001;<code>head</code>&#x3001;<code>content</code>&#x90FD;&#x5B9A;&#x4E49;&#x6210;&#x4E86;<code>block</code>&#xFF0C;&#x7136;&#x540E;&#x5B50;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x518D;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x4EE5;&#x4E0B;&#x518D;&#x6765;&#x770B;&#x5B50;&#x6A21;&#x677F;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>{% extends &quot;base.html&quot; %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    &lt;style type=&quot;text/css&quot;&gt;
+        .important { color: #336699; }
+    &lt;/style&gt;
+{% endblock %}
+{% block content %}
+    &lt;h1&gt;Index&lt;/h1&gt;
+    &lt;p class=&quot;important&quot;&gt;
+      Welcome to my awesome homepage.
+    &lt;/p&gt;
+{% endblock %}
+</code></pre><p>{% endraw %}</p>
+<p>&#x9996;&#x5148;&#x7B2C;&#x4E00;&#x884C;&#x5C31;&#x5B9A;&#x4E49;&#x4E86;&#x5B50;&#x6A21;&#x677F;&#x7EE7;&#x627F;&#x7684;&#x7236;&#x6A21;&#x677F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B50;&#x6A21;&#x677F;&#x5B9E;&#x73B0;&#x4E86;<code>title</code>&#x8FD9;&#x4E2A;<code>block</code>&#xFF0C;&#x5E76;&#x586B;&#x5145;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x518D;&#x770B;<code>head</code>&#x8FD9;&#x4E2A;<code>block</code>&#xFF0C;&#x91CC;&#x9762;&#x8C03;&#x7528;&#x4E86;<code>super()</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x76EE;&#x7684;&#x662F;&#x6267;&#x884C;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x628A;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x6DFB;&#x52A0;&#x5230;&#x5B50;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FD9;&#x4E00;&#x53E5;&#xFF0C;&#x5219;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#x5904;&#x5728;<code>head</code>&#x8FD9;&#x4E2A;<code>block</code>&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5C06;&#x4F1A;&#x88AB;&#x5B50;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x7ED9;&#x8986;&#x76D6;&#x6389;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x6A21;&#x677F;&#x4E2D;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;&#x91CD;&#x540D;&#x7684;<code>block</code>&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x9700;&#x8981;&#x7528;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;<code>block</code>&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>self.blockname</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5F15;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>&lt;title&gt;{% block title %}{% endblock %}&lt;/title&gt;
+&lt;h1&gt;{{ self.title() }}&lt;/h1&gt;
+{% block body %}{% endblock %}
+</code></pre><p>{% endraw %}</p>
+<p>&#x4EE5;&#x4E0A;&#x793A;&#x4F8B;&#x4E2D;<code>h1</code>&#x6807;&#x7B7E;&#x91CD;&#x7528;&#x4E86;<code>title</code>&#x8FD9;&#x4E2A;<code>block</code>&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5B50;&#x6A21;&#x677F;&#x5B9E;&#x73B0;&#x4E86;<code>title</code>&#x8FD9;&#x4E2A;<code>block</code>&#xFF0C;<code>h1</code>&#x6807;&#x7B7E;&#x4E5F;&#x80FD;&#x62E5;&#x6709;&#x8FD9;&#x4E2A;&#x503C;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x5B50;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6587;&#x672C;&#x6807;&#x7B7E;&#x548C;&#x4EE3;&#x7801;&#x90FD;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x4ECE;&#x7236;&#x6A21;&#x677F;&#x4E2D;&#x7EE7;&#x627F;&#x7684;<code>block</code>&#x4E2D;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x8FD9;&#x4E9B;&#x6587;&#x672C;&#x548C;&#x6807;&#x7B7E;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x6E32;&#x67D3;&#x3002;</p>
+<h6 id="&#x8F6C;&#x4E49;&#xFF1A;">&#x8F6C;&#x4E49;&#xFF1A;</h6>
+<p>&#x8F6C;&#x4E49;&#x7684;&#x6982;&#x5FF5;&#x662F;&#xFF0C;&#x5728;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x6709;&#x53EF;&#x80FD;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x5371;&#x9669;&#x7684;&#x5B57;&#x7B26;&#x6BD4;&#x5982;<code>&lt;</code>&#x3001;<code>&gt;</code>&#x7B49;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x4F1A;&#x7834;&#x574F;&#x6389;&#x539F;&#x6765;<code>HTML</code>&#x6807;&#x7B7E;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x66F4;&#x4E25;&#x91CD;&#x7684;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;<code>XSS</code>&#x8DE8;&#x57DF;&#x811A;&#x672C;&#x653B;&#x51FB;&#xFF0C;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x78B0;&#x5230;<code>&lt;</code>&#x3001;<code>&gt;</code>&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E94;&#x8BE5;&#x8F6C;&#x4E49;&#x6210;<code>HTML</code>&#x80FD;&#x6B63;&#x786E;&#x8868;&#x793A;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;<code>&gt;</code>&#x5728;<code>HTML</code>&#x4E2D;&#x5E94;&#x8BE5;&#x7528;<code>&amp;lt;</code>&#x6765;&#x8868;&#x793A;&#x7B49;&#x3002;</p>
+<p>&#x4F46;&#x662F;<code>Flask</code>&#x4E2D;&#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x5168;&#x5C40;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x9488;&#x5BF9;&#x90A3;&#x4E9B;&#x4EE5;<code>.html</code>&#x3001;<code>.htm</code>&#x3001;<code>.xml</code>&#x548C;<code>.xhtml</code>&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x91C7;&#x7528;<code>render_template</code>&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x6E32;&#x67D3;&#x7684;&#xFF0C;&#x5219;&#x4F1A;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#x3002;&#x5E76;&#x4E14;&#x5F53;&#x7528;<code>render_template_string</code>&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x540E;&#x518D;&#x6E32;&#x67D3;&#x3002;&#x800C;&#x5BF9;&#x4E8E;<code>Jinja2</code>&#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x5168;&#x5C40;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x4F5C;&#x8005;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x539F;&#x56E0;&#xFF1A;</p>
+<ol>
+<li>&#x6E32;&#x67D3;&#x5230;&#x6A21;&#x677F;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x90FD;&#x662F;&#x5371;&#x9669;&#x7684;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x5E26;&#x6765;&#x5927;&#x91CF;&#x7684;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x9500;&#x3002;</li>
+<li><code>Jinja2</code>&#x5F88;&#x96BE;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x8F6C;&#x4E49;&#x8FC7;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x5C06;&#x5BF9;&#x4E00;&#x4E9B;&#x5DF2;&#x7ECF;&#x88AB;&#x8F6C;&#x4E49;&#x8FC7;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53D1;&#x751F;&#x4E8C;&#x6B21;&#x8F6C;&#x4E49;&#xFF0C;&#x5728;&#x6E32;&#x67D3;&#x540E;&#x4F1A;&#x7834;&#x574F;&#x539F;&#x6765;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ol>
+<p>&#x5728;&#x6CA1;&#x6709;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#x7684;&#x6A21;&#x5F0F;&#x4E0B;&#xFF08;&#x6BD4;&#x5982;&#x4EE5;<code>.conf</code>&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x4E0D;&#x4FE1;&#x4EFB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>{{ content_html|e }}</code>&#x6216;&#x8005;&#x662F;<code>{{ content_html|escape }}</code>&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;&#x5728;&#x5F00;&#x542F;&#x4E86;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#x7684;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x5173;&#x95ED;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>{{ content_html|safe }}</code>&#x7684;&#x65B9;&#x5F0F;&#x5173;&#x95ED;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#x3002;&#x800C;<code>{%autoescape true/false%}...{%endautoescape%}</code>&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x5757;&#x653E;&#x5728;&#x4E2D;&#x95F4;&#xFF0C;&#x6765;&#x5173;&#x95ED;&#x6216;&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF0C;&#x4F8B;&#x5982;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5173;&#x95ED;&#x4E86;&#x81EA;&#x52A8;&#x8F6C;&#x4E49;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>{% autoescape false %}
+  &lt;p&gt;autoescaping is disabled here
+  &lt;p&gt;{{ will_not_be_escaped }}
+{% endautoescape %}
+</code></pre><p>{% endraw %}</p>
+<h6 id="&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;">&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</h6>
+<p><code>Jinja</code>&#x652F;&#x6301;&#x8BB8;&#x591A;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;<strong>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6574;&#x578B;&#x3001;&#x6D6E;&#x70B9;&#x578B;&#x3001;&#x5217;&#x8868;&#x3001;&#x5143;&#x7EC4;&#x3001;&#x5B57;&#x5178;&#x3001;true\/false</strong>&#x3002;&#x6CE8;&#x610F;&#x5176;&#x4E2D;&#x7684;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x662F;<code>true/false</code>&#xFF0C;&#x90FD;&#x662F;&#x5C0F;&#x5199;&#xFF0C;&#x4E0D;&#x662F;<code>Python</code>&#x4E2D;&#x7684;<code>True/False</code>&#x3002;</p>
+<h6 id="&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;">&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;</h6>
+<ul>
+<li><code>+</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x6570;&#x5B57;&#x76F8;&#x52A0;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x52A0;&#xFF0C;&#x5217;&#x8868;&#x76F8;&#x52A0;&#x3002;&#x4F46;&#x662F;&#x5E76;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;<code>+</code>&#x8FD0;&#x7B97;&#x7B26;&#x6765;&#x64CD;&#x4F5C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x52A0;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>~</code>&#x8FD0;&#x7B97;&#x7B26;&#x3002;</li>
+<li><code>-</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x53EA;&#x80FD;&#x9488;&#x5BF9;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x76F8;&#x51CF;&#x3002;</li>
+<li><code>/</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x5BF9;&#x4E24;&#x4E2A;&#x6570;&#x8FDB;&#x884C;&#x76F8;&#x9664;&#x3002;</li>
+<li><code>%</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x3002;</li>
+<li><code>*</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x4E58;&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5BF9;&#x5B57;&#x7B26;&#x8FDB;&#x884C;&#x76F8;&#x4E58;&#x3002;</li>
+<li><code>**</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x6B21;&#x5E42;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;2**3=8&#x3002;</li>
+<li><code>in</code>&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;&#x8DDF;python&#x4E2D;&#x7684;<code>in</code>&#x4E00;&#x6837;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;<code>{{1 in [1,2,3]}}</code>&#x8FD4;&#x56DE;<code>true</code>&#x3002;</li>
+<li><code>~</code>&#x53F7;&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;&#x62FC;&#x63A5;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6BD4;&#x5982;<code>{{&quot;Hello&quot; ~ &quot;World&quot;}}</code>&#x5C06;&#x8FD4;&#x56DE;<code>HelloWorld</code>&#x3002;</li>
+</ul>
+<h3 id="&#x9759;&#x6001;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#xFF1A;">&#x9759;&#x6001;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#xFF1A;</h3>
+<p><code>Web</code>&#x5E94;&#x7528;&#x4E2D;&#x4F1A;&#x51FA;&#x73B0;&#x5927;&#x91CF;&#x7684;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x6765;&#x4F7F;&#x5F97;&#x7F51;&#x9875;&#x66F4;&#x52A0;&#x751F;&#x52A8;&#x7F8E;&#x89C2;&#x3002;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x6709;<code>CSS</code>&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x3001;<code>JavaScript</code>&#x811A;&#x672C;&#x6587;&#x4EF6;&#x3001;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x3001;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x7B49;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;&#x5728;<code>Jinja</code>&#x4E2D;&#x52A0;&#x8F7D;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>url_for</code>&#x5168;&#x5C40;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>{% raw %}</p>
+<pre><code>&lt;link href=&quot;{{ url_for(&apos;static&apos;,filename=&apos;about.css&apos;) }}&quot;&gt;
+</code></pre><p>{% endraw %}</p>
+<p><code>url_for</code>&#x51FD;&#x6570;&#x9ED8;&#x8BA4;&#x4F1A;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>static</code>&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5BFB;&#x627E;<code>about.css</code>&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x4E86;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x4E8E;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<code>/static/about.css</code>&#x8DEF;&#x5F84;&#x3002;&#x5F53;&#x7136;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x4E0D;&#x653E;&#x5728;<code>static</code>&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6B64;&#x65F6;&#x5C31;&#x9700;&#x8981;&#x5177;&#x4F53;&#x6307;&#x5B9A;&#x4E86;&#xFF0C;&#x770B;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>app = Flask(__name__,static_folder=&apos;/tmp&apos;)
+</code></pre><p>&#x90A3;&#x4E48;&#x8BBF;&#x95EE;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;&#x4F1A;&#x5230;<code>/tmp</code>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x5BFB;&#x627E;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./chapter1.html" class="navigation navigation-prev " aria-label="Previous page: 第三章：flask入门（URL）"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./第六章：flask入门（数据库）.html" class="navigation navigation-next " aria-label="Next page: 第五章：flask入门（视图高级）"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
